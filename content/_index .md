@@ -1,10 +1,8 @@
 ---
 title: "Home"
-favicon: "images/favicon.png"
 menu: "main"
 weight: 1
 ---
-
 Peter's personal blog on real-world agile topics
 
 Under construction
