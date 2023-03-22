@@ -28,7 +28,7 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "don't just talk agile - walk agile"
+    title = "don't just talk agile - walk agile!"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
