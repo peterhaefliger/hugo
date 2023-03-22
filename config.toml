@@ -24,18 +24,6 @@ enableRobotsTXT = true
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
 
-# Multilingual mode config. More for information about how to setup translation,
-# see https://gohugo.io/content-management/multilingual/
-[languages]
-  [languages.en]
-    title = "Bear Cub"
-    languageName = "en-US 🇺🇸"
-    LanguageCode = "en-US"
-    contentDir = "content"
-    [languages.en.params]
-      blogPath = "/blog" # Path to your blog section (used by RSS)
-      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
-
 [params]
   # The description of your website
   description = "Peter's personal blog on real-world agile topics"
@@ -51,7 +39,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "don't just talk agile - walk agile!"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
@@ -65,6 +53,4 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [social]
-    email = "me@example.com" # Added to the navbar so readers can reply to posts
-    twitter = "example" # Twitter handle (without '@')
-    facebook_admin = "0000000000" # Facebook Page Admin ID
+    twitter = "walkagile" # Twitter handle (without '@')
