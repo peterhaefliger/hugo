@@ -1,0 +1,6 @@
+run = "hugo && miniserve public --index index.html"
+# run = "hugo"
+entrypoint = "content/posts/hello.md"
+
+# [hosting]
+# directory = "/public"
