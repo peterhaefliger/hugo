@@ -1,6 +1,6 @@
 ---
 title: "Home"
-favicon = "images/favicon.png"
+favicon: "images/favicon.png"
 menu: "main"
 weight: 1
 ---
