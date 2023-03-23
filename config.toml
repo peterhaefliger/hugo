@@ -34,7 +34,7 @@ enableRobotsTXT = true
     contentDir = "content"
     [languages.en.params]
       blogPath = "/blog" # Path to your blog section (used by RSS)
-      madeWith = "Created with [HUGO](https://gohugo.io/) in [replit](https://replit.com) and [github](https://github.com), using [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://github.com/clente/hugo-bearcub) theme. Powered by [netlify](https://netlify.com). Footsteps icon designed by [Elisa Riva](https://pixabay.com/users/elisariva-1348268/)"
+      madeWith = "Created with [HUGO](https://gohugo.io/) in [replit](https://replit.com) and [github](https://github.com), using [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://github.com/clente/hugo-bearcub) theme. Powered by [netlify](https://netlify.com). Footsteps icon designed by [Elisa Riva](https://pixabay.com/users/elisariva-1348268/)."
 
 [params]
   # The description of your website
