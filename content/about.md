@@ -1,15 +1,19 @@
 ---
 title: "About"
 menu: "main"
-weight: 1
+weight: 2
 ---
 
-# About me
+# About
+
+## About me
 
 Under Construction. Some content will be added soon. 
 
-# About this site
+## About this blog
 
 Under Construction. Some content will be added soon. 
+
+
 
 ![footsteps](/images/pilgrims.png)
