@@ -12,4 +12,4 @@ Under Construction. Some content will be added soon.
 
 Under Construction. Some content will be added soon. 
 
-![footsteps](/images/icon_steps_bg_white_landscape_walking.png)
+![footsteps](/images/pilgrims.png)
