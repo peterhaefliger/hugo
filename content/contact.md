@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 menu: "main"
-weight: 2
+weight: 1
 ---
 
 # Contact
