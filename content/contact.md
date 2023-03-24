@@ -4,11 +4,9 @@ menu: "main"
 weight: 2
 ---
 
-e-mail: [peterhaefliger@yahoo.com](mailto:peterhaefliger@yahoo.com)
+# Contact
 
-twitter: [@walkagile](https://www.twitter.com/walkagile)
+Follow me on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/) or [twitter](https://www.twitter.com/walkagile) if you want to connect or send me an e-mail [e-mail](mailto:peterhaefliger@yahoo.com) if you have any questions or suggestions.
 
-linkedin: [Peter Häfliger](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/)
-
-![footsteps](/images/icon_steps_bg_white_landscape_walking.png)
+![pilgrims](/images/pilgrims.png)
 

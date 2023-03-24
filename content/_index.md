@@ -4,10 +4,10 @@ menu: "main"
 weight: 1
 ---
 
-# walk agile!
+# Welcome!
 
-Peter's personal blog on real-world agile topics.
+Welcome to my personal blog on real-world agile topics.
 
-Under Construction. More content will be added soon.
+This site is still under Construction. Some real content will be added soon.
 
-![footsteps](/images/icon_steps_bg_white_landscape_walking.png)
+![pilgrims](/images/pilgrims.png)

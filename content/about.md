@@ -4,8 +4,12 @@ menu: "main"
 weight: 2
 ---
 
-Under Construction. 
+# About me
 
-More information about me and about this blog will be added soon.
+Under Construction. Some content will be added soon. 
+
+# About this site
+
+Under Construction. Some content will be added soon. 
 
 ![footsteps](/images/icon_steps_bg_white_landscape_walking.png)
