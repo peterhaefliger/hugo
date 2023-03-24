@@ -14,11 +14,11 @@ Under Construction. Some content will be added soon.
 
 Under Construction. Some content will be added soon. 
 
-## About the pilgrim icon
+## About the tools and technologies used 
 
 Under Construction. Some content will be added soon. 
 
-## About the tools and technologies used for creating this blog
+## About the pilgrim icon
 
 Under Construction. Some content will be added soon. 
 
