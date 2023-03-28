@@ -4,8 +4,6 @@ date: 2023-03-28
 draft: false
 ---
 
-# Fun Retrospectives
-
 This first post is an updated version of an article which I have written in January 2021 for an older blog of mine which I have since discontinued. It was the time when we had to prepare our first distributed/online retrospectives during the Corona lockdown. It describes my experience with [Fun Retrospectives](https://www.funretrospectives.com/), a book, website and very helpful online retro tool.
 
 ## Introduction
@@ -68,7 +66,7 @@ Choose an activity which allows the participants to reflect and communicate thei
 
 Choose an activity for the main part of the retrospective where you want to collect feedback about the iteration (or whatever context you have chosen). At the time of this writing, four activities are available: [WWW: Worked well, kinda Worked, didn’t Work](https://www.funretrospectives.com/www-activity-worked-well-kinda-worked-didnt-work/), [The 3 Ls: Liked, Learned, Lacked](https://www.funretrospectives.com/the-3-ls-liked-learned-lacked/), [Open the Box: Add, Remove, Recycle](https://www.funretrospectives.com/open-the-box/) and [Hopes & Concerns]()https://www.funretrospectives.com/hopes-and-concerns/. Alternatively, a custom table can be created. We’ll choose “Open the Box: Add, Remove, Recycle” in the example:
 
-![5. main course(../funretrospectives/images/5_main_course.png)
+![5. main course](../funretrospectives/images/5_main_course.png)
 
 All the main course activities allow the participants to post cards with items to be discussed. The cards can be colored for categorization. The default colors are yellow (for category “People”), blue (for category “Process”) and red (for category “Tools”):
  
