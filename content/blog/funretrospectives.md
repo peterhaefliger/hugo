@@ -37,6 +37,6 @@ To prepare a retrospective for your team, just create a [new agenda](https://app
 
 Set the context for the meeting, for example “last sprint” or “last delivery” or “last week’s major incident”. This will align the participants’ expectations as to the scope of the retro. As we are nearing the end of the first quarter, we’ll set the context to “Q1/2023” in the example:
 
-![1. context](funretrospectives/images/1_context.png)
+![1. context](../funretrospectives/images/1_context.png)
 
 ![pilgrims](/images/pilgrims.png)
