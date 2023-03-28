@@ -18,7 +18,7 @@ Under Construction. Some content will be added soon.
 
 Under Construction. Some content will be added soon. 
 
-## About the pilgrim icon
+## About the pilgrim avatar
 
 Under Construction. Some content will be added soon. 
 
