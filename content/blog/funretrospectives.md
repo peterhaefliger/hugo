@@ -156,6 +156,7 @@ The tool is free and easy to use. As it is not a commercial tool (and not paid f
 * The number of votes seems to be limited to five votes per participant which might not be quite sufficient if there are many items to vote on.
 * As some actions are not undoable, the moderator should make sure that all participants understand these limitations beforehand. It might therefore be advisable to not include the link in the meeting invitation but only send it out during the meeting after some introductory explanations.
 * To ensure that the participants navigate in sync and are always on the same page, it helps if the moderator can share his screen through a separate video channel.
-* Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. A minimal viable product! Just give it a try!
+
+Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. A minimal viable product! Just give it a try!
 
 ![pilgrims](/images/pilgrims.png)
