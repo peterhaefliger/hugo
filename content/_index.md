@@ -4,7 +4,7 @@ menu: "main"
 weight: 1
 ---
 
-# Walk the talk!
+# walk agile!
 
 Welcome to my personal blog on my experiences in the agile trenches.
 
