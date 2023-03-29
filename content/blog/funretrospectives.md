@@ -1,6 +1,6 @@
 ---
 title: "Fun Retrospectives"
-date: 2023-03-28
+date: 2023-03-29
 draft: false
 ---
 
@@ -82,19 +82,80 @@ Define the voting scheme on the items collected in the main course. [Dot Voting]
 
 ### 7. Check-out
 
-Choose an activity to close the meeting. At the time of this writing, three very different activities are available: While [One word before leaving](https://www.funretrospectives.com/one-word-before-leaving/) allows each participant to communicate their feelings at the end of the meeting and [Token of appreciation](https://www.funretrospectives.com/token-of-appreciation/) fosters appreciation and acknowlegement between team members, [Who-What-When Steps to Action](https://www.funretrospectives.com/the-who-what-when-steps-to-action/) helps to define follow-up actions, deadlines and accountabilities. Alternatively, a custom table can be created or the activity can be skipped by choosing "None".  We’ll choose “Who-What-When Steps to Action” in the example and then click the **COMPLETE** button and then the **CREATE RETROSPECTIVE** button:
+Choose an activity to close the meeting. At the time of this writing, three very different activities are available: While [One word before leaving](https://www.funretrospectives.com/one-word-before-leaving/) allows each participant to communicate their feelings at the end of the meeting and [Token of appreciation](https://www.funretrospectives.com/token-of-appreciation/) fosters appreciation and acknowlegement between team members, [Who-What-When Steps to Action](https://www.funretrospectives.com/the-who-what-when-steps-to-action/) helps to define follow-up actions, deadlines and accountabilities. Alternatively, a custom table can be created or the activity can be skipped by choosing "None".  We’ll choose “One word before leaving” in the example and then click the **COMPLETE** button and then the **CREATE RETROSPECTIVE** button:
 
 ![7. check-out](../funretrospectives/images/7_check_out.png)
 
-*more content will be added here*
+### Agenda
 
+This will create the retrospective and show you the agenda (which is called Summary because it will serve as a summary at the end) with the Context, the Prime Directive, the activities chosen for the different courses (Energizer, Check-in, Main Course and Check-out), the filtering (voting scheme) and the skeleton of the main course action items to be elaborated:
+
+![8. agenda](../funretrospectives/images/8_agenda.png)
+
+You can navigate to the different courses, for example to the Energizer:
+
+![9. energizer](../funretrospectives/images/9_energizer.png)
+
+And you can add titles or column names for some of the activies. As an example, let's add instructions for the Energizer activity:
+
+![10. energizer configured](../funretrospectives/images/10_energizer_configured.png)
+
+Once everything is correctly configured, you can copy the link (URL) from your browser's address field and send it to the participants. 
 
 ## Execution
 
-*more content will be added here*
+The participants can open the board simply by following the link. Of course you will need a separate tool like skype or zoom for audio (and possibly video) interaction.
+
+After the reading of the Context and Prime Directive from the agenda/summary, all participants need to navigate to the Energizer activity. In our example, they can enter the title of their favorite movie and hit Enter to make it visible to the others:
+
+![11. energizer executed](../funretrospectives/images/11_energizer_executed.png)
+
+Guessing who likes what will be a lot of fun and warm the players up for the more serious discussions to come.
+
+After the Energizer activity, all participants need to navigate to the Check-in activity which in our example is ESVP (Explorer, Shopper, Vacationer, Prisoner) where each participant can anonymously reveal their feelings and expectations towards this retrospective:
+
+![12. check-in](../funretrospectives/images/12_check_in.png)
+
+Every participant can hit the button corresponding to the model which fits them most. Once the button is pressed, the count will be revealed to all participants. A participant who does not want to participate in this activity can reveal the result of the others with the **REVEAL** button:
+
+![13. check-in executed](../funretrospectives/images/13_check_in_executed.png)
+
+After the Check-in, all participants need to navigate to the Main Course. In our example, they can enter items which they would like to add, remove or recycle (i.e. keep) into the respective column and hit Enter to make them visible to the others:
+
+![14. main course executed](../funretrospectives/images/14_main_course_executed.png)
+
+Moving over one of the posts with the mouse shows additional steering elements to modify the post:
+
+![15. main course single post](../funretrospectives/images/15_main_course_single_post.png)
+
+Posts can be edited with the pen icon or deleted with the trashcan icon. Their color can be changed for categorization with the color dots.
+
+Posts can be moved around between rows or columns when the mouse is placed on the three dots at the top of the card. By moving the cards around, the posts can be ordered or clustered.
+
+After all the items have been collected and discussed, they can be voted on with the +/- buttons if dot voting is enabled. The vote count appears in the upper right corner of the card.
+
+Finally, action items can be discussed and written down for the most important items with the second pen icon at the bottom of the card.
+
+After the Main Course of the retrospective, all participants need to navigate to the Check-out activity. In our example, they can let the others know with one word how they feel after the retro and hit Enter to make it visible to the others:
+
+![16. check-out executed](../funretrospectives/images/16_check_out_executed.png)
+
+The action items defined in the Main Course have been added to the summary which can be printed and distributed or stored away:
+
+![17. summary](../funretrospectives/images/17_summary.png)
+
+This allows to check at the beginning of the next retro whether this retro’s action items have been implemented. In a real-world example, the action items should of course not only have a responsible person assigned but also a deadline.
 
 ## Caveats
 
-*more content will be added here*
+The tool is free and easy to use. As it is not a commercial tool (and not paid for by advertisements either), it does, however, lack production quality. This manifests itself in a number of drawbacks which you should keep in mind if you want to use it safely and effectively and avoid frustration or even security issues:
+
+* There are no accounts, no log-ins, no passwords. This makes it extremely easy to use but means of course that the data entered is out there on the web, unprotected. Everybody who guesses the link can access it. This is no problem if every participant strictly adheres to the rule that absolutely no personal or classified data whatsoever (names or other personal data of the participants, customer-identifying data or the company’s secrets of trade) may be entered into the board.
+* Any participant can modify text entered by another participant or other attributes of a post like the color. Even the colors of the categories or their labels or the activities’ titles or column names could be changed by any participant during the meeting. This is no problem if every participant only does so with explicit permission of the author of the post or the moderator.
+* Participants can post more than once even where they are supposed to post only once (e.g. in the “Who likes it” or “One Word” activities). Likewise, this is no problem if simply no participant does this.
+* The number of votes seems to be limited to five votes per participant which might not be quite sufficient if there are many items to vote on.
+* As some actions are not undoable, the moderator should make sure that all participants understand these limitations beforehand. It might therefore be advisable to not include the link in the meeting invitation but only send it out during the meeting after some introductory explanations.
+* To ensure that the participants navigate in sync and are always on the same page, it helps if the moderator can share his screen through a separate video channel.
+* Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. A minimal viable product! Just give it a try!
 
 ![pilgrims](/images/pilgrims.png)
