@@ -64,7 +64,7 @@ Choose an activity which allows the participants to reflect and communicate thei
 
 ### 5. Main Course
 
-Choose an activity for the main part of the retrospective where you want to collect feedback about the iteration (or whatever context you have chosen). At the time of this writing, four activities are available: [WWW: Worked well, kinda Worked, didn’t Work](https://www.funretrospectives.com/www-activity-worked-well-kinda-worked-didnt-work/), [The 3 Ls: Liked, Learned, Lacked](https://www.funretrospectives.com/the-3-ls-liked-learned-lacked/), [Open the Box: Add, Remove, Recycle](https://www.funretrospectives.com/open-the-box/) and [Hopes & Concerns]()https://www.funretrospectives.com/hopes-and-concerns/. Alternatively, a custom table can be created. We’ll choose “Open the Box: Add, Remove, Recycle” in the example:
+Choose an activity for the main part of the retrospective where you want to collect feedback about the iteration (or whatever context you have chosen). At the time of this writing, four activities are available: [WWW: Worked well, kinda Worked, didn’t Work](https://www.funretrospectives.com/www-activity-worked-well-kinda-worked-didnt-work/), [The 3 Ls: Liked, Learned, Lacked](https://www.funretrospectives.com/the-3-ls-liked-learned-lacked/), [Open the Box: Add, Remove, Recycle](https://www.funretrospectives.com/open-the-box/) and [Hopes & Concerns](https://www.funretrospectives.com/hopes-and-concerns/). Alternatively, a custom table can be created. We’ll choose “Open the Box: Add, Remove, Recycle” in the example:
 
 ![5. main course](../funretrospectives/images/5_main_course.png)
 
