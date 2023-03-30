@@ -159,4 +159,3 @@ The tool is free and easy to use. As it is not a commercial tool (and not paid f
 
 Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. Just give it a try! And whatever tool you use, have a look at the Fun Retrospectives [book](https://www.amazon.com/gp/product/B08GHYCF2W?pf_rd_r=5KJH4Q5VQN2W0G9FNCG5&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f) or [website](https://www.funretrospectives.com/) if you are looking for inspiration.
 
-![pilgrims](/images/pilgrims.png)
