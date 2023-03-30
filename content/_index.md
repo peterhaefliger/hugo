@@ -30,7 +30,7 @@ As a former scrum master and current product owner, I have great interest in all
 
 ## About the tools and technologies used 
 
-This site is created with [HUGO](https://gohugo.io/), an open-source static site generator. I run it in [replit](https://replit.com) which allows me to edit my files from any machine without local installation. I use [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme because I like its elegant simplicity and the author's design philosophy as explained [here](https://clente.github.io/hugo-bearcub/) and [here](https://lente.dev/en/posts/stone-websites/).
+This site is created with [HUGO](https://gohugo.io/), an open-source static site generator. I run it in [replit](https://replit.com) which allows me to edit my files from any machine without local installation. This allows me to focus exclusively on content written in [markdown](https://www.markdownguide.org/getting-started/) and not worry about formatting or styling. I use [github](https://github.com) for back-up and version control and [netlify](https://netlify.com) for building, deployment and hosting. I use [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme because I like its elegant simplicity and the author's design philosophy as explained [here](https://clente.github.io/hugo-bearcub/) and [here](https://lente.dev/en/posts/stone-websites/).
 
 ## About the pilgrim icon and avatar
 
