@@ -34,7 +34,7 @@ enableRobotsTXT = true
     contentDir = "content"
     [languages.en.params]
       blogPath = "/blog" # Path to your blog section (used by RSS)
-      madeWith = "Created with [HUGO](https://gohugo.io/) in [replit](https://replit.com) and [github](https://github.com), using [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://github.com/clente/hugo-bearcub) theme. Powered by [netlify](https://netlify.com)."
+      madeWith = "Created with [HUGO](https://gohugo.io/) in [replit](https://replit.com) and [github](https://github.com), using [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme. Powered by [netlify](https://netlify.com)."
 
 [params]
   # The description of your website
@@ -65,4 +65,5 @@ enableRobotsTXT = true
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
   [social]
+    email = "peterhaefliger@yahoo.com" # Added to the navbar so readers can reply to posts
     twitter = "walkagile" # Twitter handle (without '@')
