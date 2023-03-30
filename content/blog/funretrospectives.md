@@ -1,6 +1,6 @@
 ---
 title: "Fun Retrospectives"
-date: 2023-03-29
+date: 2023-03-30
 draft: false
 ---
 
@@ -17,11 +17,11 @@ For those who do not know the term “retrospective” (or “retro” for short
 
 Retrospectives are an important agile practice. They facilitate the team’s self-organization and continuous improvement.
 
-The concept was of course not invented by the agile movement. When I started my career in the software industry more than twenty years ago, we used to have a “touch-down” meeting at the end of every project, as we used to have a “kick-off” meeting at the beginning of every project. In other settings, these touch-downs were simply called “lessons-learnt”. And even in the Swiss Army, where I served in the last century, trainings used to be closed with a “debriefing” (or in German: “Manöverkritik”).
+The concept was of course not invented by the agile movement. When I started my career in the software industry more than twenty years ago, we used to have a “touch-down” meeting at the end of every project, as we used to have a “kick-off” meeting at the beginning of every project. In other settings, these touch-downs were simply called “lessons-learnt” sessions.
 
 The achievement of the agile movement lies in the importance and value it has given to retrospectives. Scrum development teams do a retro after every sprint, which usually means every 2 to 4 weeks.
 
-There are many books on the theory, philosophy and psychology of retrospectives. Far out at the practical end of the spectrum, there is Fun Retrospectives by Paulo Caroli and Tainã Caetano, a book and website which contain a wealth of techniques and activities to “break the ice” in a retro, to get the conversation going and to help uncover the real, hidden issues which bother the team members. Again, the general idea is of course not new: Good moderators have known such games and activities in pre-agile times. But the book is a good starting point for the novice and a great source of inspiration even for the experienced scrum master.
+There are many books on the theory, philosophy and psychology of retrospectives. Far out at the practical end of the spectrum, there is "Fun Retrospectives" by Paulo Caroli and Tainã Caetano, a [book](https://www.amazon.com/gp/product/B08GHYCF2W?pf_rd_r=5KJH4Q5VQN2W0G9FNCG5&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f) and [website](https://www.funretrospectives.com/) which contain a wealth of techniques and activities to “break the ice” in a retro, to get the conversation going and to help uncover the real, hidden issues which bother the team members. Again, the general idea is of course not new: Good moderators have known such games and activities in pre-agile times. But the book is a good starting point for the novice and a great source of inspiration even for the experienced scrum master.
 
 These types of activities were developed for in-person meetings, as agile methods in general were developed for personal interaction, with developers sharing (depending on the method) one room, one desk, one keyboard or even one lunchbox. But some of the activities can easily be performed in a distributed setting. And, fortunately, the authors have built an online tool where they have implemented a few of them. They have, in fact, implemented their full [7-Step Agenda for Effective Retrospectives](https://caroli.org/en/a-7-step-agenda-for-effective-retrospectives/).
 
@@ -116,7 +116,7 @@ After the Energizer activity, all participants need to navigate to the Check-in 
 
 ![12. check-in](../funretrospectives/images/12_check_in.png)
 
-Every participant can hit the button corresponding to the model which fits them most. Once the button is pressed, the count will be revealed to all participants. A participant who does not want to participate in this activity can reveal the result of the others with the **REVEAL** button:
+Every participant can hit the button corresponding to the character which fits them most. Once the button is pressed, the count will be anonymously revealed. A participant who does not want to participate in this activity can reveal the count with the **REVEAL** button:
 
 ![13. check-in executed](../funretrospectives/images/13_check_in_executed.png)
 
@@ -134,7 +134,7 @@ Posts can be moved around between rows or columns when the mouse is placed on th
 
 After all the items have been collected and discussed, they can be voted on with the +/- buttons if dot voting is enabled. The vote count appears in the upper right corner of the card.
 
-Finally, action items can be discussed and written down for the most important items with the second pen icon at the bottom of the card.
+Finally, action items can be discussed and written down with the second pen icon at the bottom of the card.
 
 After the Main Course of the retrospective, all participants need to navigate to the Check-out activity. In our example, they can let the others know with one word how they feel after the retro and hit Enter to make it visible to the others:
 
@@ -157,6 +157,6 @@ The tool is free and easy to use. As it is not a commercial tool (and not paid f
 * As some actions are not undoable, the moderator should make sure that all participants understand these limitations beforehand. It might therefore be advisable to not include the link in the meeting invitation but only send it out during the meeting after some introductory explanations.
 * To ensure that the participants navigate in sync and are always on the same page, it helps if the moderator can share his screen through a separate video channel.
 
-Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. A minimal viable product! Just give it a try!
+Again, the tool is free to use without any installation. And in summary, it works well if all participants play by the rules and use common sense and good will. Just give it a try! And whatever tool you use, have a look at the Fun Retrospectives [book](https://www.amazon.com/gp/product/B08GHYCF2W?pf_rd_r=5KJH4Q5VQN2W0G9FNCG5&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f) or [website](https://www.funretrospectives.com/) if you are looking for inspiration.
 
 ![pilgrims](/images/pilgrims.png)
