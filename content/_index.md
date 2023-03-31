@@ -24,9 +24,9 @@ If you are interested in more details about my continuing education or my profes
 
 ## About this blog
 
-I created this blog as a repository of thoughts and ideas written down for later reference and discussion. 
+I have created this blog as a repository of thoughts and ideas written down for later reference and discussion. Sometimes the act of writing it down already helps me structure a thought or shape an idea.
 
-As a former scrum master and current product owner, I have great interest in all things agile but also in software engineering and programming topics.
+As a former scrum master and current product owner, I have great interest in all things agile but also in more technical software engineering and programming topics.
 
 ## About the tools and technologies used 
 
@@ -36,11 +36,15 @@ This site is created with [HUGO](https://gohugo.io/), an open-source static site
 
 Some years ago when I needed to choose an avatar for a JIRA profile, I first thought of the usual characters with which we try to identify ourselves as developers, like the ninja or the samurai. But then I remembered the [scrum guide](https://scrumguides.org/) and started reflecting on the scrum values of commitment, courage, focus, openness and respect, and suddenly a very different character came to my mind: the pilgrim.
 
-![pilgrims](/images/pilgrims.png)
-
 The pilgrim has a vision and decides to embark on a journey to an important goal. Just think of the [Wise Men from the East in the Gospel of Matthew](https://www.bibleserver.com/KJV/Matthew2%3A1): When they suddenly detect a new star in the sky, they know that an old prophecy has been fulfilled. They immediately want to go see the Messiah. They don’t know how to get there or how long it will take them. They just follow the star.
 
 The pilgrim is completely committed to his goal and focused on his mission and has enormous courage: He leaves his comfort zone without knowing the exact route to the goal nor the challenges ahead. He is agile and open-minded – able and willing to learn on the way. He is humble and respects the people who share or cross his path.
+
+So I created my own pilgrim icon:
+
+![pilgrims](/images/3_pilgrims.png)
+
+I have used it in most of my profiles since.
 
 Every software project is a pilgrimage. Most of the time, not only the path to the goal is unknown, but even the goal itself is moving. That's why we constantly need to experiment, inspect and adapt:
 
