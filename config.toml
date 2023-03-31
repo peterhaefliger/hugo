@@ -38,7 +38,7 @@ enableRobotsTXT = true
 
 [params]
   # The description of your website
-  description = "Peter's personal blog on real-world agile topics"
+  description = "don't just talk agile - walk agile!"
 
   # The path to your favicon
   favicon = "images/pilgrim.png"
