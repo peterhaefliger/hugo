@@ -20,13 +20,13 @@ I hold the following [certificates from srum.org](https://www.scrum.org/user/628
 
 ![scrum certificates](/images/scrum_certificates.png)
 
-If you are interested in more details about my continuing education or my professional career, please see my profile on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/). You will see that I call myself "agile software developer and product owner". I sometimes fear that my developer colleagues might find this presumptuous. After all, I have not been a "developer" since I got promoted team lead in 2010. On the other hand, what's my professional purpose other than developing software, even if I am not actually coding? When people talk of a "film-maker", they usually refer to the director or producer, not to the person actually holding the camera. In the same sense, I will always consider myself a software developer, even if my contribution is not in writing code but in identifying customer requirements, reconciling stakeholder priorities and maximizing value.
+If you are interested in more details about my continuing education or my professional career, please see my profile on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/). 
 
 ## About this blog
 
 I have created this blog as a repository of thoughts and ideas written down for later reference and discussion. Sometimes the act of writing it down already helps me structure a thought or shape an idea.
 
-As a former scrum master and current product owner, I have great interest in all things agile but also in more technical software engineering and programming topics.
+As a former scrum master and current product owner, I have great interest agile practices but also in more technical software engineering and programming topics.
 
 ## About the tools and technologies used 
 
@@ -50,5 +50,5 @@ Every software project is a pilgrimage. Most of the time, not only the path to t
 
 ![evidence-based management](/images/evidence_based_management.png)
 
-(Picture taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide))
+(Picture taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide)  from Mike Rother’s Improvement Kata (http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html))
 
