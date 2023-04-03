@@ -26,7 +26,7 @@ If you are interested in more details about my continuing education or my profes
 
 I have created this blog as a repository of thoughts and ideas written down for later reference and discussion. Sometimes the act of writing it down already helps me structure a thought or shape an idea.
 
-As a former scrum master and current product owner, I have great interest agile practices but also in more technical software engineering and programming topics.
+As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics.
 
 ## About the tools and technologies used 
 
@@ -50,5 +50,5 @@ Every software project is a pilgrimage. Most of the time, not only the path to t
 
 ![evidence-based management](/images/evidence_based_management.png)
 
-(Picture taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide)  from Mike Rother’s Improvement Kata (http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html))
+(The above picture is taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide) in which credit is given to [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html) from whose [Improvement Kata](http://wwwpersonal.umich.edu/~mrother/The_Improvement_Kata.html) the figure seems to be adapted.)
 
