@@ -28,6 +28,8 @@ I have created this blog as a repository of thoughts and ideas written down for 
 
 As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics.
 
+All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
+
 ## About the tools and technologies used 
 
 This site is created with [HUGO](https://gohugo.io/), an open-source static site generator. I run it in [replit](https://replit.com) which allows me to edit my files from any machine without local installation. Using HUGO allows me to exclusively focus on content written in [markdown](https://www.markdownguide.org/getting-started/) and not worry about formatting or styling. I use [github](https://github.com) for back-up and version control and [netlify](https://netlify.com) for building, deploying and hosting the site. I use [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme because I like its elegant simplicity and the author's design philosophy as explained [here](https://clente.github.io/hugo-bearcub/) and [here](https://lente.dev/en/posts/stone-websites/).
@@ -38,9 +40,9 @@ Some years ago when I needed to choose an avatar for a JIRA profile, I first tho
 
 The pilgrim has a vision and decides to embark on a journey to an important goal. Just think of the [Wise Men from the East in the Gospel of Matthew](https://www.bibleserver.com/KJV/Matthew2%3A1): When they suddenly detect a new star in the sky, they know that an old prophecy has been fulfilled. They immediately want to go see the Messiah. They don’t know how to get there or how long it will take them. They just follow the star.
 
-The pilgrim is completely committed to his goal and focused on his mission and has enormous courage: He leaves his comfort zone without knowing the exact route to the goal nor the challenges ahead. He is agile and open-minded – able and willing to learn on the way. He is humble and respects the people who share or cross his path.
+The pilgrim is completely committed to their goal and focused on their mission and has enormous courage: They leave their comfort zone without knowing the exact route to the goal nor the challenges ahead. They are agile and open-minded – able and willing to learn on the way. They are humble and respect the people who share or cross their path.
 
-So I created my own pilgrim icon:
+That's why I decided to create my own pilgrim icon:
 
 ![pilgrims](/images/3_pilgrims.png)
 
