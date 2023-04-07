@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/hello/</loc>
-    <lastmod>2021-12-01T22:50:26+00:00</lastmod>
+    <loc>https://walkagile.com/</loc>
+    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-12-01T22:50:26+00:00</lastmod>
+    <loc>https://walkagile.com/blog/</loc>
+    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-12-01T22:50:26+00:00</lastmod>
+    <loc>https://walkagile.com/blog/software-development-multidisciplinary/</loc>
+    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://walkagile.com/blog/funretrospectives/</loc>
+    <lastmod>2023-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://walkagile.com/categories/</loc>
+  </url><url>
+    <loc>https://walkagile.com/tags/</loc>
   </url>
 </urlset>

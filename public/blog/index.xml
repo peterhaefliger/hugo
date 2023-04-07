@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on don&#39;t just talk agile - walk agile!</title>
-    <link>https://walkagile.com/</link>
-    <description>Recent content in Home on don&#39;t just talk agile - walk agile!</description>
+    <title>Blog on don&#39;t just talk agile - walk agile!</title>
+    <link>https://walkagile.com/blog/</link>
+    <description>Recent content in Blog on don&#39;t just talk agile - walk agile!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Peter Häfliger</copyright>
-    <lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software Development as a multidisciplinary endeavor</title>
       <link>https://walkagile.com/blog/software-development-multidisciplinary/</link>

@@ -41,7 +41,7 @@ enableRobotsTXT = true
   description = "don't just talk agile - walk agile!"
 
   # The path to your favicon
-  favicon = "images/pilgrim.png"
+  favicon = "/images/pilgrim.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
