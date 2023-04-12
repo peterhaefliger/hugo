@@ -48,9 +48,8 @@ That's why I decided to create my own pilgrim icon:
 
 I have used it in most of my profiles since.
 
-Every software project is a pilgrimage. Most of the time, not only the path to the goal is unknown, but even the goal itself is moving. That's why we constantly need to experiment, inspect and adapt:
+Every software project is a pilgrimage. Most of the time, not only the path to the goal is unknown, but even the goal itself is moving. That's why we constantly need to experiment, inspect and adapt[^1]:
 
 ![evidence-based management](/images/evidence_based_management.png)
 
-(The above picture is taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide) where credit is given to [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html) from whose [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) the figure seems to be adapted.)
-
+[^1]: The picture is taken from [scrum.org's Evidence-Based Management Guide](https://www.scrum.org/resources/evidence-based-management-guide) where credit is given to [Mike Rother](http://www-personal.umich.edu/~mrother/Homepage.html) from whose [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) the figure seems to have been adapted.
