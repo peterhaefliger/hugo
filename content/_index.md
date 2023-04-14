@@ -26,7 +26,7 @@ If you are interested in more details about my continuing education or my profes
 
 I have created this blog as a repository of thoughts and ideas written down for later reference and discussion. Sometimes the act of writing it down already helps me structure a thought or shape an idea.
 
-As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics.
+As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics, mathematical and algorithmic puzzles, languages, literature and music.
 
 All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
 

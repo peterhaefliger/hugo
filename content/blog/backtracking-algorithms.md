@@ -1,6 +1,6 @@
 ---
 title: "Backtracking algorithms: experiment, inspect and adapt"
-date: 2023-05-17
+date: 2023-06-13
 draft: false
 ---
 
@@ -117,7 +117,7 @@ And from here I can move forward again. And back and forth and back and forth ag
 
 Millions of repetions of the same small, simple step? Sounds like the perfect problem to write a program for!
 
-This type of algorithm is called [backtracking algorithm](https://en.wikipedia.org/wiki/Backtracking) as I remembered from the time I had once implemented a Sudoku solver in Ruby some 20 years earlier. [Sudoku](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms) is a very typical application of backtracking, as is [Eight Queens Problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle) with which the algorithm is usually illustrated in textbooks. But the rainbow squares problem is equally well suited to illustrate backtracking, as I hope to have shown above.
+This type of algorithm is called [backtracking algorithm](https://en.wikipedia.org/wiki/Backtracking) as I remembered from the time I had once implemented a Sudoku solver in Ruby some 20 years earlier. [Sudoku](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms) is a very typical application of backtracking, as is the [Eight Queens Problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle) with which the algorithm is usually illustrated in textbooks. But the rainbow squares problem is equally well suited to illustrate backtracking, as I hope to have shown above.
 
 Test [link to a python program](/files/blog/backtracking-algorithms/askpython.py)
 
@@ -137,7 +137,7 @@ Conceptually, the algorithm searches a tree of possibilities. Running the algori
 
 Starting with the largest pairs yields a tree which is narrower but deeper as - with a bit of imagination - can already be seen in the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Or as the [AMM paper](https://www.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) states: "... it presents fewer choices early on."
 
-Another strategy worth exploring might be to run from 1 to 60 but for each number start with the highest-number pairing instead of the lowest one, i.e. pair 1 first with 48, 2 with 47, 3 with 46 and so on. Thinking in terms of the tree, this means leaving the structure of the tree unchanged but exploring different branches first. I have not tried this.
+Another strategy worth exploring might be to run from 1 to 60 but for each number start with the highest-number pairing instead of the lowest one, i.e. pair 1 first with 48, 2 with 47, 3 with 46, 4 with 60 and so on. Thinking in terms of the tree, this means leaving the structure of the tree unchanged but exploring different branches first. I have not tried this.
 
 I was not so interested in exploring this any further because it is highly dependant on the concrete problem. Does the statement "... it presents fewer choices early on..." still hold if the target set is not square numbers but e.g. prime numbers? This would have to be analyzed for every case separately. 
 
