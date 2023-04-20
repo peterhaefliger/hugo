@@ -9,7 +9,7 @@ The following table lists all 93 pairs which can be formed with the numbers from
 - The first column lists the numbers i from 1 to 60.
 - The second column lists all the numbers greater than i with which i can be paired. That's the column used by the first (slow) version of the python program.
 - The third column lists all the numbers smaller than i with which i can be paired. That's the column used by the second (backward) version of the python program.
-- The fourth column lists all the numbers with which i can be paired, smaller or greater¨. That's the column used by the third (fast forward) version of the python program.
+- The fourth column lists all the numbers with which i can be paired, smaller or greater. That's the column used by the third (fast forward) version of the python program.
 
 |  i  | higher pairs  | lower pairs | all pairs      |
 | --- | ------------  | ----------- | -------------  |
