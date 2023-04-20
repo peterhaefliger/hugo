@@ -1,6 +1,6 @@
 ---
 title: "Why names in programs matter"
-date: 2023-04-14
+date: 2023-04-20
 draft: false
 ---
 
@@ -56,7 +56,7 @@ func TestMultiply(t *testing.T) {
 }
 ```
 
-What I do *not* like about the above code snippets, however, is the *names* of the two functions under test.
+What I do *not* like about the above code snippets, however, is the names of the two functions under test.
 
 `Add` and `Multiply` are verbs in imperative mood. They are *commands*. Commands make good names for *procedures* but not for functions. Procedures like `write`, `draw`, `save` should do what their name implies, and they should not return any result. `TestAdd` and `TestMultiply` are good examples: They do what their name implies, namely test the function they claim to test, and they do not return a result. *Functions*, on the other hand, do return a result[^1], and they should be *named by what they return*.
 
@@ -91,8 +91,8 @@ This reads as:
 - Let `p` be the **product** of 4 and 5.
 
 I find this a lot more intuitive than any of the following:
-- Let `s` be the *result* of adding 2 and 3.
-- Multiply 4 by 5 and assign the *result* to `p`.
+- Let `s` be the *result* of *adding* 2 and 3.
+- *Multiply* 4 by 5 and assign the *result* to `p`.
 
 While the first is only cumbersome, the second is actually an overspecification and violates the principle of separation of concerns as I will elaborate on further below.
 
@@ -111,8 +111,9 @@ func TestSum(t *testing.T) {
 
 As the function under test is named by what it returns, line 4 nicely reads: "We got the sum of 2 and 3". This is followed by the check on line 5: "If what we want is not what we got, then ...".[^2]
 
-[^2]: While I am writing this, I wonder if quality would improve if code were read aloud. Should we not only have code reviews, but also "code slams"? Maybe not, but
-code certainly benefits from being *explained*: If the reviewer does not only read your code but you actually have to explain it to them, you will catch many things which just "don't sound right".
+[^2]: While I am writing this, I wonder if quality would improve if code were read aloud. Should we not only have code reviews, but also "code slams"? Maybe not, but code certainly benefits from being *explained*: If the reviewer does not only read your code but you actually have to explain it to them, you will catch many things which just "don't sound right".
+
+    And while I am writing about explaining code to the reviewer, my colleague [Uğur Gürel](https://www.linkedin.com/in/uguerel/) points me to [Rubber Duck Debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). So the idea seems to be quite accepted that explaining code (or a concept or a design) to someone (even a rubber duck) helps uncover its flaws because it forces one to to rigorously think and reason about it instead of just glossing over it ("I know that this works - somehow...").
 
 Unfortunately, some programming languages treat procedures just as functions which do not return any result (as go seems to do, judging from the implementation of the `calculator_test` package where `TestAdd` and `TestMultiply` are declared as `func` even though they are procedures) or which maybe return something like `void`. If you only program in languages which handle procedures this way, then my insistence on different naming patterns might seem a mere matter of taste. But there are languages which distinguish strongly between functions (which are *called*) and procedures (which are *executed*).
 
@@ -157,6 +158,6 @@ begin
 end;
 ```
 
-But do names in programs really matter? After all, they are just names... Probably not if you regard a program merely as a set of instructions for a machine. The compiler will remove them anyway. Then you might just as well name your functions f{{< sub "1" >}} to f{{< sub "n" >}}. But if you understand a program as a text to communicate interface specifications, design patterns, data structures and algorithm implementations to your fellow programmers, then you should definitely care. It's often the names which reveal a program's underlying software engineering principles.
+But do names in programs really matter? After all, they are just names. Probably not if you regard a program merely as a set of instructions for a machine. The compiler will remove them anyway. Then you might just as well name your functions f{{< sub "1" >}} to f{{< sub "n" >}}. But if you understand a program as a text to communicate interface specifications, design patterns, data structures and algorithm implementations to your fellow programmers, then you should definitely care. 
 
 Fortunately, my developer colleagues at Avaloq do care about function and procedure and variable names and about many other small things which make our code more readable, understandable and maintainable.

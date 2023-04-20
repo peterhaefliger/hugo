@@ -21,8 +21,8 @@
 <meta property="og:description" content="I would like to play around a bit with the go programming language. It is not a bad idea to learn a new programming language every once in a while to get to know different ways of thinking about computational problems. I did that extensively in the first years of my professional career when I was working abroad and had a lot of time during my lonely hotel nights. I do it very little today where I prefer to spend my free time with my family." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://walkagile.com/draft/why-names-in-programs-matter/" /><meta property="og:image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/><meta property="article:section" content="draft" />
-<meta property="article:published_time" content="2023-04-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-14T00:00:00+00:00" /><meta property="og:site_name" content="don&#39;t just talk agile - walk agile!" />
+<meta property="article:published_time" content="2023-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-20T00:00:00+00:00" /><meta property="og:site_name" content="don&#39;t just talk agile - walk agile!" />
 
 
 
@@ -37,9 +37,9 @@
 
   
   <meta itemprop="name" content="Why names in programs matter">
-<meta itemprop="description" content="I would like to play around a bit with the go programming language. It is not a bad idea to learn a new programming language every once in a while to get to know different ways of thinking about computational problems. I did that extensively in the first years of my professional career when I was working abroad and had a lot of time during my lonely hotel nights. I do it very little today where I prefer to spend my free time with my family."><meta itemprop="datePublished" content="2023-04-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-14T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1415"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
+<meta itemprop="description" content="I would like to play around a bit with the go programming language. It is not a bad idea to learn a new programming language every once in a while to get to know different ways of thinking about computational problems. I did that extensively in the first years of my professional career when I was working abroad and had a lot of time during my lonely hotel nights. I do it very little today where I prefer to spend my free time with my family."><meta itemprop="datePublished" content="2023-04-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1476"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
 <meta itemprop="keywords" content="" />
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -80,8 +80,8 @@
 <h1>Why names in programs matter</h1>
 <p>
   <i>
-    <time datetime='2023-04-14' pubdate>
-      2023-04-14
+    <time datetime='2023-04-20' pubdate>
+      2023-04-20
     </time>
   </i>
 </p>
@@ -129,7 +129,7 @@
 <span class="ln">22</span>    <span class="nx">t</span><span class="p">.</span><span class="nf">Errorf</span><span class="p">(</span><span class="s">&#34;want %f, got %f&#34;</span><span class="p">,</span> <span class="nx">want</span><span class="p">,</span> <span class="nx">got</span><span class="p">)</span>
 <span class="ln">23</span>  <span class="p">}</span>
 <span class="ln">24</span><span class="p">}</span>
-</code></pre></div><p>What I do <em>not</em> like about the above code snippets, however, is the <em>names</em> of the two functions under test.</p>
+</code></pre></div><p>What I do <em>not</em> like about the above code snippets, however, is the names of the two functions under test.</p>
 <p><code>Add</code> and <code>Multiply</code> are verbs in imperative mood. They are <em>commands</em>. Commands make good names for <em>procedures</em> but not for functions. Procedures like <code>write</code>, <code>draw</code>, <code>save</code> should do what their name implies, and they should not return any result. <code>TestAdd</code> and <code>TestMultiply</code> are good examples: They do what their name implies, namely test the function they claim to test, and they do not return a result. <em>Functions</em>, on the other hand, do return a result<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and they should be <em>named by what they return</em>.</p>
 <p>If we name the functions by what they return, namely the <code>Sum</code> and the <code>Product</code> of two numbers:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="c1">// Package calculator does simple calculations.
@@ -154,8 +154,8 @@
 </ul>
 <p>I find this a lot more intuitive than any of the following:</p>
 <ul>
-<li>Let <code>s</code> be the <em>result</em> of adding 2 and 3.</li>
-<li>Multiply 4 by 5 and assign the <em>result</em> to <code>p</code>.</li>
+<li>Let <code>s</code> be the <em>result</em> of <em>adding</em> 2 and 3.</li>
+<li><em>Multiply</em> 4 by 5 and assign the <em>result</em> to <code>p</code>.</li>
 </ul>
 <p>While the first is only cumbersome, the second is actually an overspecification and violates the principle of separation of concerns as I will elaborate on further below.</p>
 <p>Or, in the context of the above <code>calculator_test</code> package:</p>
@@ -187,7 +187,7 @@
 </span><span class="ln">3</span><span class="w">    </span><span class="n">calculator</span><span class="p">.</span><span class="k">Start</span><span class="p">;</span><span class="w">
 </span><span class="ln">4</span><span class="w">  </span><span class="k">end</span><span class="w"> </span><span class="k">if</span><span class="p">;</span><span class="w">
 </span><span class="ln">5</span><span class="w"></span><span class="k">end</span><span class="p">;</span><span class="w">
-</span></code></pre></div><p>But do names in programs really matter? After all, they are just names&hellip; Probably not if you regard a program merely as a set of instructions for a machine. The compiler will remove them anyway. Then you might just as well name your functions f<sub>1</sub> to f<sub>n</sub>. But if you understand a program as a text to communicate interface specifications, design patterns, data structures and algorithm implementations to your fellow programmers, then you should definitely care. It&rsquo;s often the names which reveal a program&rsquo;s underlying software engineering principles.</p>
+</span></code></pre></div><p>But do names in programs really matter? After all, they are just names. Probably not if you regard a program merely as a set of instructions for a machine. The compiler will remove them anyway. Then you might just as well name your functions f<sub>1</sub> to f<sub>n</sub>. But if you understand a program as a text to communicate interface specifications, design patterns, data structures and algorithm implementations to your fellow programmers, then you should definitely care.</p>
 <p>Fortunately, my developer colleagues at Avaloq do care about function and procedure and variable names and about many other small things which make our code more readable, understandable and maintainable.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -196,8 +196,8 @@
 <p>In fact, functions should <em>not do anything but</em> return a result. To be more precise, they should not produce any abstract side-effects. That&rsquo;s what <a href="https://bertrandmeyer.com/">Bertrand Meyer</a> calls the <strong>Command-Query Separation Principle</strong>. It guarantees referential transparency and can be informally understood as &ldquo;asking a question should not change the answer&rdquo;. For a rigorous definition and explanation, see Bertrand&rsquo;s classic book &ldquo;Object-Oriented Software Construction, 2<sup>nd</sup> edition&rdquo; (OOSC-2), pg. 751. The book&rsquo;s full text has recently been made <a href="https://bertrandmeyer.com/OOSC2/">freely available online</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>While I am writing this, I wonder if quality would improve if code were read aloud. Should we not only have code reviews, but also &ldquo;code slams&rdquo;? Maybe not, but
-code certainly benefits from being <em>explained</em>: If the reviewer does not only read your code but you actually have to explain it to them, you will catch many things which just &ldquo;don&rsquo;t sound right&rdquo;.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>While I am writing this, I wonder if quality would improve if code were read aloud. Should we not only have code reviews, but also &ldquo;code slams&rdquo;? Maybe not, but code certainly benefits from being <em>explained</em>: If the reviewer does not only read your code but you actually have to explain it to them, you will catch many things which just &ldquo;don&rsquo;t sound right&rdquo;.</p>
+<p>And while I am writing about explaining code to the reviewer, my colleague <a href="https://www.linkedin.com/in/uguerel/">Uğur Gürel</a> points me to <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">Rubber Duck Debugging</a>. So the idea seems to be quite accepted that explaining code (or a concept or a design) to someone (even a rubber duck) helps uncover its flaws because it forces one to to rigorously think and reason about it instead of just glossing over it (&ldquo;I know that this works - somehow&hellip;&quot;).&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>That&rsquo;s what Bertrand Meyer calls the  <strong>Uniform Access Principle</strong>: &ldquo;All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation.&rdquo; For a detailed explanation, see &ldquo;Object-Oriented Software Construction, 2<sup>nd</sup> edition&rdquo; (OOSC-2), pg. 57, <a href="https://bertrandmeyer.com/OOSC2/">freely available online here</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>

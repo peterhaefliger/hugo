@@ -23,8 +23,8 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://walkagile.com/draft/backtracking-algorithms/" /><meta property="og:image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/><meta property="article:section" content="draft" />
-<meta property="article:published_time" content="2023-04-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-14T00:00:00+00:00" /><meta property="og:site_name" content="don&#39;t just talk agile - walk agile!" />
+<meta property="article:published_time" content="2023-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-20T00:00:00+00:00" /><meta property="og:site_name" content="don&#39;t just talk agile - walk agile!" />
 
 
 
@@ -41,9 +41,9 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
   
   <meta itemprop="name" content="Backtracking algorithms: experiment, inspect and adapt">
 <meta itemprop="description" content="In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
-The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):"><meta itemprop="datePublished" content="2023-04-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-14T00:00:00+00:00" />
-<meta itemprop="wordCount" content="3854"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
+The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):"><meta itemprop="datePublished" content="2023-04-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3901"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
 <meta itemprop="keywords" content="" />
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -84,8 +84,8 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <h1>Backtracking algorithms: experiment, inspect and adapt</h1>
 <p>
   <i>
-    <time datetime='2023-04-14' pubdate>
-      2023-04-14
+    <time datetime='2023-04-20' pubdate>
+      2023-04-20
     </time>
   </i>
 </p>
@@ -309,7 +309,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <ul>
 <li>5 - 13: Function <code>possible_pairings</code> calculates the list of possible pairings. In the problem section above, I said that the 93 pairs can easily be found by iterating over all numbers i from 1 to 60 and checking for every number j between (i + 1) and 60 whether the sum of i and j is an element of the above set of square numbers. As in the final version of the program we consider forward and backward information, we need all pairs listed twice, once for the lower number and once for the higher number. That&rsquo;s why j also runs from 1 to 60, not only from (i + 1) to 60.</li>
 <li>16: Definition of a counter for the number of solutions already found.</li>
-<li>19: Defintions of the number of recursions already, i.e. the number of times procedure <code>solve</code> has already been called.</li>
+<li>19: Defintion of the number of recursions already executed, i.e. the number of times procedure <code>solve</code> has already been called.</li>
 <li>21 - 76: Definition and implementation of the <code>solve</code> procedure which contains all the backtracking logic:
 <ul>
 <li>25: Increment the recursion counter</li>
@@ -317,10 +317,11 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <ul>
 <li>31: Increment the solution counter</li>
 <li>32 - 35: Print the current solution</li>
+<li>Do nothing more in this recursive step. This means: Jump back to the context of the caller of <code>solve(N+1)</code> which in turn is an execuction of <code>solve</code>, namely <code>solve(N)</code>.</li>
 </ul>
 </li>
-<li>39/40: If we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position</li>
-<li>41: Else (i.e. if we are at a positition smaller than N+1 which is unoccupied):
+<li>39/40: Else if we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position, i.e. recursively call <code>solve(pos+1)</code>.</li>
+<li>41: Else (i.e. if we are at a positition smaller than N+1 which is <em>un</em>occupied):
 <ul>
 <li>44: We loop over all possible pair positions of the current position:
 <ul>
@@ -328,8 +329,8 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <ul>
 <li>51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.</li>
 <li>55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.</li>
-<li>68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position.</li>
-<li>72 - 76: After <code>solve</code> has been executed (which includes all its recursive executions), we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53.</li>
+<li>68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call <code>solve(pos+1)</code>.</li>
+<li>72 - 76: After <code>solve(pos+1)</code> has been executed (which includes all its recursive executions), we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53.</li>
 </ul>
 </li>
 </ul>
@@ -341,9 +342,9 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 </ul>
 <p>The program file can be found <a href="/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_final_version.py">here</a> and its output file <a href="/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_final_version.txt">here</a>. The output file shows that the final version of the program finds the solutions in the same order as the initial version but just performs a lot less unneccessary steps.</p>
 <h2 id="the-analogy">The analogy</h2>
-<p>I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this post? I do not only find this drawing very beautiful, but also the algorithm which allows me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example <a href="https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif">this one</a> for the <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle">Eight Queens Puzzle</a>.</p>
+<p>I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this post? I do not only find this drawing very beautiful, but also the algorithm which allowed me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example <a href="https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif">this one</a> for the <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle">Eight Queens Puzzle</a>.</p>
 <p>Backtracking algorithms in their efficiency also remind me a lot of the agile way of working: experiment, inspect and adapt: try something, measure its effect, and if it does not work, then try something else. But do it systematically and empirically.</p>
-<p>The three empirical pillars of scrum are transparency, inspection and adaptation. Transparency and inspection are important here: We have been able to improve the efficiency of the algorithm massively by including information previously ignored. If something does not work, it is best to fail at the earliest possible moment. As the <a href="https://scrumguides.org/">scrum guide</a> states:</p>
+<p>The three empirical pillars of scrum are transparency, inspection and adaptation. Transparency and inspection are important here: We have been able to improve the efficiency of the algorithm massively by including information previously ignored. If something does not work, it is crucial to fail at the earliest possible moment and not waste time exploring dead ends any further. As the <a href="https://scrumguides.org/">scrum guide</a> states:</p>
 <ul>
 <li>Transparency enables inspection. Inspection without transparency is misleading and wasteful.</li>
 <li>Inspection enables adaptation. Inspection without adaptation is considered pointless.</li>

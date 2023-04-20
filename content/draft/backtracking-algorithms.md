@@ -1,6 +1,6 @@
 ---
 title: "Backtracking algorithms: experiment, inspect and adapt"
-date: 2023-04-14
+date: 2023-04-20
 draft: false
 ---
 
@@ -289,29 +289,30 @@ The main program begins on line 78:
 The main program depends on functions, procedures and variables defined and implemented in lines 1 - 76:
 - 5 - 13: Function `possible_pairings` calculates the list of possible pairings. In the problem section above, I said that the 93 pairs can easily be found by iterating over all numbers i from 1 to 60 and checking for every number j between (i + 1) and 60 whether the sum of i and j is an element of the above set of square numbers. As in the final version of the program we consider forward and backward information, we need all pairs listed twice, once for the lower number and once for the higher number. That's why j also runs from 1 to 60, not only from (i + 1) to 60.
 - 16: Definition of a counter for the number of solutions already found.
-- 19: Defintions of the number of recursions already, i.e. the number of times procedure `solve` has already been called.
+- 19: Defintion of the number of recursions already executed, i.e. the number of times procedure `solve` has already been called.
 - 21 - 76: Definition and implementation of the `solve` procedure which contains all the backtracking logic:
   - 25: Increment the recursion counter
   - 29: If we are at the sentinel position N+1, a solution has been found:
     - 31: Increment the solution counter
     - 32 - 35: Print the current solution
-  - 39/40: If we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position
-  - 41: Else (i.e. if we are at a positition smaller than N+1 which is unoccupied):
+    - Do nothing more in this recursive step. This means: Jump back to the context of the caller of `solve(N+1)` which in turn is an execuction of `solve`, namely `solve(N)`.
+  - 39/40: Else if we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position, i.e. recursively call `solve(pos+1)`.
+  - 41: Else (i.e. if we are at a positition smaller than N+1 which is *un*occupied):
     - 44: We loop over all possible pair positions of the current position:
       - 47: If a possible pair position is not already taken (i.e. paired with a lower position), then
         - 51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.
         - 55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.
-        - 68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position.
-        - 72 - 76: After `solve` has been executed (which includes all its recursive executions), we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53.
+        - 68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call `solve(pos+1)`.
+        - 72 - 76: After `solve(pos+1)` has been executed (which includes all its recursive executions), we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53.
 
 The program file can be found [here](/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_final_version.py) and its output file [here](/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_final_version.txt). The output file shows that the final version of the program finds the solutions in the same order as the initial version but just performs a lot less unneccessary steps.
 
 ## The analogy
 
-I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this post? I do not only find this drawing very beautiful, but also the algorithm which allows me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example [this one](https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif) for the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
+I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this post? I do not only find this drawing very beautiful, but also the algorithm which allowed me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example [this one](https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif) for the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 
 Backtracking algorithms in their efficiency also remind me a lot of the agile way of working: experiment, inspect and adapt: try something, measure its effect, and if it does not work, then try something else. But do it systematically and empirically.
 
-The three empirical pillars of scrum are transparency, inspection and adaptation. Transparency and inspection are important here: We have been able to improve the efficiency of the algorithm massively by including information previously ignored. If something does not work, it is best to fail at the earliest possible moment. As the [scrum guide](https://scrumguides.org/) states: 
+The three empirical pillars of scrum are transparency, inspection and adaptation. Transparency and inspection are important here: We have been able to improve the efficiency of the algorithm massively by including information previously ignored. If something does not work, it is crucial to fail at the earliest possible moment and not waste time exploring dead ends any further. As the [scrum guide](https://scrumguides.org/) states: 
 - Transparency enables inspection. Inspection without transparency is misleading and wasteful.
 - Inspection enables adaptation. Inspection without adaptation is considered pointless. 

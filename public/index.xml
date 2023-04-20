@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Peter Häfliger</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backtracking algorithms: experiment, inspect and adapt</title>
       <link>https://walkagile.com/draft/backtracking-algorithms/</link>
-      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://walkagile.com/draft/backtracking-algorithms/</guid>
       <description>In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
@@ -21,7 +21,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&amp;ldquo;retir
     <item>
       <title>Why names in programs matter</title>
       <link>https://walkagile.com/draft/why-names-in-programs-matter/</link>
-      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://walkagile.com/draft/why-names-in-programs-matter/</guid>
       <description>I would like to play around a bit with the go programming language. It is not a bad idea to learn a new programming language every once in a while to get to know different ways of thinking about computational problems. I did that extensively in the first years of my professional career when I was working abroad and had a lot of time during my lonely hotel nights. I do it very little today where I prefer to spend my free time with my family.</description>
