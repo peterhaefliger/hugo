@@ -147,7 +147,7 @@ The generic algorithm might benefit from tree optimization techniques, either up
 
 Besides the two optimization techniques just mentioned (optimizing the tree and optimizing the order in which the subtrees are searched at any given node), there is only one more area for optimization: making sure that all possible information is taken into account at every step to decide whether to continue the search in this direction or not.
 
-Looking at my paper figures again and thinking a bit more about the fowrdard and backward running algorithms, I suddenly found the missing piece: In the first version of my algorithm, on the first traversal "down the tree", I chose the 11{{< super "th" >}} pair to be [15 - 21] as shown in figure 5 because that's the first option listed for 15 in the second column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs) and because the number 21 is not yet used by any other pair which means it is still available (figure 15):
+Looking at my paper figures again and thinking a bit more about the forward and backward running algorithms, I suddenly found the missing piece: In the first version of my algorithm, on the first traversal "down the tree", I chose the 11{{< super "th" >}} pair to be [15 - 21] as shown in figure 5 because that's the first option listed for 15 in the second column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs) and because the number 21 is not yet used by any other pair which means it is still available (figure 15):
 
 ![backtracking 13: 10 pairs](/images/blog/backtracking-algorithms/backtracking_13_10_pairs.png)
 
@@ -280,7 +280,7 @@ The main program begins on line 78:
 - 82: Definition of the set of target numbers {9, 36, 49, 64, 81}
 - 85: Calculation of the set of possible pairings. The term "set" is actually imprecise here as the `solve` procedure depends on the data structure exactly as returned by the auxiliary function `possible_pairings`: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Because each pair is listed twice, the total number of pairs in our example is 186.
 - 89/94: The two data structures `pos_taken` and `used_pairs` together correspond to my paper drawings: They track the current state of the partial solution:
-  - `pos_taken` keeps track of which positions in the circle are already marked by a pair. It runs from 1 to N+1, not N. The additional entry is used as a "sentinel" which indicates to the solver procedure that a solution has been found. The list is initialized with all `False` values as initially no position is taken.
+  - `pos_taken` keeps track of which positions in the circle are already marked by a pair. The list is initialized with all `False` values as initially no position is taken.
   - `used_pairs` keeps track of the pairs used in the current partial solution. This is needed to print the solution when one has been found. The list is initially empty.
 - 96 - 103: Some initial output
 - 105: Execution of the `solve` procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.
@@ -292,7 +292,7 @@ The main program depends on functions, procedures and variables defined and impl
 - 19: Defintion of the number of recursions already executed, i.e. the number of times procedure `solve` has already been called.
 - 21 - 76: Definition and implementation of the `solve` procedure which contains all the backtracking logic:
   - 25: Increment the recursion counter
-  - 29: If we are at the sentinel position N+1, a solution has been found:
+  - 29: If we are at position N+1, a solution has been found:
     - 31: Increment the solution counter
     - 32 - 35: Print the current solution
     - Do nothing more in this recursive step. This means: Jump back to the context of the caller of `solve(N+1)` which in turn is an execuction of `solve`, namely `solve(N)`.
