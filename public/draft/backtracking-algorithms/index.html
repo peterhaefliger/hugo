@@ -43,7 +43,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <meta itemprop="description" content="In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
 The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):"><meta itemprop="datePublished" content="2023-04-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-04-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="3871"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
+<meta itemprop="wordCount" content="3927"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
 <meta itemprop="keywords" content="" />
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -330,7 +330,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <li>51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.</li>
 <li>55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.</li>
 <li>68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call <code>solve(pos+1)</code>.</li>
-<li>72 - 76: After <code>solve(pos+1)</code> has been executed (which includes all its recursive executions), we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53.</li>
+<li>72 - 76: At this point, either <code>solve(pos+1)</code> has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position was no longer reachable. In the first case, we are now on the way up the tree again and have to undo the pairing tentatively made in lines 51 - 53. In the second case, we cannot make the step down the tree and have to undo the tentative pairing just the same.</li>
 </ul>
 </li>
 </ul>
