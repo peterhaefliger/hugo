@@ -6,17 +6,17 @@ draft: false
 
 The following table lists all 93 pairs which can be formed with the numbers from 1 to 60 whose sum is an element of the set {9, 36, 49, 64, 81}:
 
-- the first column lists the numbers i from 1 to 60 
-- the second column lists all the numbers greater than i with which i can be paired
-- the third column lists all the numbers smaller than i with which i can be paired
-- the fourth column lists all the numbers with which i can be paired, smaller or greater
+- The first column lists the numbers i from 1 to 60.
+- The second column lists all the numbers greater than i with which i can be paired. That's the column used by the first (slow) version of the python program.
+- The third column lists all the numbers smaller than i with which i can be paired. That's the column used by the second (backward) version of the python program.
+- The fourth column lists all the numbers with which i can be paired, smaller or greater¨. That's the column used by the third (fast forward) version of the python program.
 
 |  i  | higher pairs  | lower pairs | all pairs      |
 | --- | ------------  | ----------- | -------------  |
 |   1 | 8, 35, 48     |             | 8, 35, 48      |
 |   2 | 7, 34, 47     |             | 7, 34, 47      |
 |   3 | 6, 33, 46     |             | 6, 33, 46      |
-|   4 | 5, 32, 46, 60 |             | 5, 32, 45, 60  |
+|   4 | 5, 32, 45, 60 |             | 5, 32, 45, 60  |
 |   5 | 31, 44, 59    | 4           | 4, 31, 44, 59  |
 |   6 | 30, 43, 58    | 3           | 3, 30, 43, 58  |
 |   7 | 29, 42, 57    | 2           | 2, 29, 42, 57  |

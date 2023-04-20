@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on don&#39;t just talk agile - walk agile!</title>
+    <link>https://walkagile.com/draft/</link>
+    <description>Recent content in Drafts on don&#39;t just talk agile - walk agile!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Peter Häfliger</copyright>
+    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backtracking algorithms: experiment, inspect and adapt</title>
+      <link>https://walkagile.com/draft/backtracking-algorithms/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/draft/backtracking-algorithms/</guid>
+      <description>In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
+The picture My former highschool math teacher Hansruedi Widmer (&amp;ldquo;retired as a teacher, not as a mathematician&amp;rdquo;) daily posts mathematical puzzles, bits of history or just &amp;ldquo;fun facts&amp;rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):</description>
+    </item>
+    
+    <item>
+      <title>Why names in programs matter</title>
+      <link>https://walkagile.com/draft/why-names-in-programs-matter/</link>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/draft/why-names-in-programs-matter/</guid>
+      <description>I would like to play around a bit with the go programming language. It is not a bad idea to learn a new programming language every once in a while to get to know different ways of thinking about computational problems. I did that extensively in the first years of my professional career when I was working abroad and had a lot of time during my lonely hotel nights. I do it very little today where I prefer to spend my free time with my family.</description>
+    </item>
+    
+  </channel>
+</rss>

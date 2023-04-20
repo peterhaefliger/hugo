@@ -1,6 +1,6 @@
 ---
-title: "Functions are not procedures because asking for information is not asking to do something"
-date: 2023-05-16
+title: "Why names in programs matter"
+date: 2023-04-14
 draft: false
 ---
 
@@ -60,7 +60,7 @@ What I do *not* like about the above code snippets, however, is the *names* of t
 
 `Add` and `Multiply` are verbs in imperative mood. They are *commands*. Commands make good names for *procedures* but not for functions. Procedures like `write`, `draw`, `save` should do what their name implies, and they should not return any result. `TestAdd` and `TestMultiply` are good examples: They do what their name implies, namely test the function they claim to test, and they do not return a result. *Functions*, on the other hand, do return a result[^1], and they should be *named by what they return*.
 
-[^1]: In fact, functions should *not do anything but* return a result. To be more precise, they should not produce any abstract side-effects. That's what [Bertrand Meyer](https://bertrandmeyer.com/) calls the **Command-Query Separation Principle**. It guarantees referential transparency and can be informally understood as "asking a question should not change the answer". For a rigorous definition and explanation, see Bertrand's groundbreaking book "Object-Oriented Software Construction, 2{{< super "nd" >}} edition" (OOSC-2), pg. 751. The book's full text has recently been made [freely available online](https://bertrandmeyer.com/OOSC2/).
+[^1]: In fact, functions should *not do anything but* return a result. To be more precise, they should not produce any abstract side-effects. That's what [Bertrand Meyer](https://bertrandmeyer.com/) calls the **Command-Query Separation Principle**. It guarantees referential transparency and can be informally understood as "asking a question should not change the answer". For a rigorous definition and explanation, see Bertrand's classic book "Object-Oriented Software Construction, 2{{< super "nd" >}} edition" (OOSC-2), pg. 751. The book's full text has recently been made [freely available online](https://bertrandmeyer.com/OOSC2/).
 
 If we name the functions by what they return, namely the `Sum` and the `Product` of two numbers:
 
@@ -94,10 +94,12 @@ I find this a lot more intuitive than any of the following:
 - Let `s` be the *result* of adding 2 and 3.
 - Multiply 4 by 5 and assign the *result* to `p`.
 
-Or, in the context of the above `TestAdd` procedure:
+While the first is only cumbersome, the second is actually an overspecification and violates the principle of separation of concerns as I will elaborate on further below.
+
+Or, in the context of the above `calculator_test` package:
 
 ```go
-func TestAdd(t *testing.T) {
+func TestSum(t *testing.T) {
   t.Parallel()
   var want float64 = 5
   got := calculator.Sum(2, 3)
@@ -109,7 +111,7 @@ func TestAdd(t *testing.T) {
 
 As the function under test is named by what it returns, line 4 nicely reads: "We got the sum of 2 and 3". This is followed by the check on line 5: "If what we want is not what we got, then ...".[^2]
 
-[^2]: While I am writing this, I wonder: Would quality improve if code were read aloud? Should we not only have code reviews, but also "code slams"? Maybe not, but
+[^2]: While I am writing this, I wonder if quality would improve if code were read aloud. Should we not only have code reviews, but also "code slams"? Maybe not, but
 code certainly benefits from being *explained*: If the reviewer does not only read your code but you actually have to explain it to them, you will catch many things which just "don't sound right".
 
 Unfortunately, some programming languages treat procedures just as functions which do not return any result (as go seems to do, judging from the implementation of the `calculator_test` package where `TestAdd` and `TestMultiply` are declared as `func` even though they are procedures) or which maybe return something like `void`. If you only program in languages which handle procedures this way, then my insistence on different naming patterns might seem a mere matter of taste. But there are languages which distinguish strongly between functions (which are *called*) and procedures (which are *executed*).
@@ -127,11 +129,11 @@ A procedure, on the other hand, needs to be executed:
 exec calculator.Start;
 ```
 
-With a function, the caller asks for information (in our example for the sum or the product of two numbers), while while with a procedure, they ask (a package or module or object) to do something (in our example the calculator to start). It is sometimes argued that asking for information is asking to compute that information (in our example: asking for the sum is asking to add and asking for the product is asking to multiply). But that's not true because the information could also be cached. Obeying the principle of separation of concerns, it should make no difference to the caller of the `Product` function whether the calulator multiplies the inputs to calculate the result or whether it selects the result from a pre-computed table.[^3] Asking for information is not asking to do something.
+With a function, the caller asks for something (in our example for the sum or the product of two numbers), while with a procedure, they ask (a package or module or object) to do something (in our example the calculator to start). It is sometimes argued that asking for a result is asking to compute that result (in our example: asking for the sum is asking to add and asking for the product is asking to multiply). But that's not true because the value could also be cached. Obeying the principle of separation of concerns, it should make no difference to the caller of the `Product` function whether the calulator multiplies the inputs to calculate the result or whether it selects the result from a pre-computed table.[^3] Asking for a result is *not* asking to compute it.
 
 [^3]: That's what Bertrand Meyer calls the  **Uniform Access Principle**: "All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation." For a detailed explanation, see "Object-Oriented Software Construction, 2{{< super "nd" >}} edition" (OOSC-2), pg. 57, [freely available online here](https://bertrandmeyer.com/OOSC2/).
 
-For the sake of completeness: There is a small variation of the rule that functions should be named by what they return and it applies to boolean functions, i.e. functions which return either true or false. They usually answer a yes/no question and their name  should reflect this. Boolean function names often denote a logical predicate or a property or quality of an object which can be true or false: 
+For the sake of completeness: There is a small variation to the recommendation that functions should be named by what they return and it applies to boolean functions, i.e. functions which return either true or false. They usually answer a yes/no question and their name  should reflect this. Boolean function names often denote a logical predicate or a property or quality of an object which can be true or false: 
 
 ```go
 if button.Enabled {...}
@@ -145,7 +147,7 @@ if button.IsEnabled {...}
 if customer.IsRetired {...}
 ```
 
-or, to take up the above PL/SQL example again:
+or, to take up the above PL/SQL calculator example again:
 
 ```sql
 begin
@@ -154,5 +156,7 @@ begin
   end if;
 end;
 ```
+
+But do names in programs really matter? After all, they are just names... Probably not if you regard a program merely as a set of instructions for a machine. The compiler will remove them anyway. Then you might just as well name your functions f{{< sub "1" >}} to f{{< sub "n" >}}. But if you understand a program as a text to communicate interface specifications, design patterns, data structures and algorithm implementations to your fellow programmers, then you should definitely care. It's often the names which reveal a program's underlying software engineering principles.
 
 Fortunately, my developer colleagues at Avaloq do care about function and procedure and variable names and about many other small things which make our code more readable, understandable and maintainable.
