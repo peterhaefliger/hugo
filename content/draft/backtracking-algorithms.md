@@ -286,24 +286,27 @@ The main program begins on line 78:
 - 105: Execution of the `solve` procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.
 - 107 - 111: Some final output
 
-The main program depends on functions, procedures and variables defined and implemented in lines 1 - 76:
+The main program depends on functions, procedures and variables defined and implemented in lines 1 - 76.
+
+Lines 1 - 19 contain a function implementation and the definition of two counters:
 - 5 - 13: Function `possible_pairings` calculates the list of possible pairings. In the problem section above, I said that the 93 pairs can easily be found by iterating over all numbers i from 1 to 60 and checking for every number j between (i + 1) and 60 whether the sum of i and j is an element of the above set of square numbers. As in the final version of the program we consider forward and backward information, we need all pairs listed twice, once for the lower number and once for the higher number. That's why j also runs from 1 to 60, not only from (i + 1) to 60.
 - 16: Definition of a counter for the number of solutions already found.
 - 19: Defintion of the number of recursions already executed, i.e. the number of times procedure `solve` has already been called.
-- 21 - 76: Definition and implementation of the `solve` procedure which contains all the backtracking logic:
-  - 25: Increment the recursion counter
-  - 29: If we are at position N+1, a solution has been found:
-    - 31: Increment the solution counter
-    - 32 - 35: Print the current solution
-    - Do nothing more in this recursive step. This means: Jump back to the context of the caller of `solve(N+1)` which in turn is an execuction of `solve`, namely `solve(N)`.
-  - 39/40: Else if we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position, i.e. recursively call `solve(pos+1)`.
-  - 41: Else (i.e. if we are at a positition smaller than N+1 which is *un*occupied):
-    - 44: We loop over all possible pair positions of the current position:
-      - 47: If a possible pair position is not already taken (i.e. paired with a lower position), then
-        - 51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.
-        - 55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.
-        - 68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call `solve(pos+1)`.
-        - 72 - 76: At this point, either `solve(pos+1)` has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we cannot make the step down the tree and have to undo the (tentative) pairing just the same.
+
+Lines 21 - 76 contain the definition and implementation of the `solve` procedure which contains all the backtracking logic:
+- 25: Increment the recursion counter
+- 29: If we are at position N+1, a solution has been found:
+  - 31: Increment the solution counter
+  - 32 - 35: Print the current solution
+  - Do nothing more in this recursive step. This means: Jump back to the context of the caller of `solve(N+1)` which in turn is an execuction of `solve`, namely `solve(N)`.
+- 39/40: Else if we are at a positition smaller than N+1 which is already taken (i.e. paired with a lower position), then we move on to the next position, i.e. recursively call `solve(pos+1)`.
+- 41: Else (i.e. if we are at a positition smaller than N+1 which is *un*occupied):
+  - 44: We loop over all possible pair positions of the current position:
+    - 47: If a possible pair position is not already taken (i.e. paired with a lower position), then
+      - 51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.
+      - 55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.
+      - 68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call `solve(pos+1)`.
+      - 72 - 76: At this point, either `solve(pos+1)` has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we cannot make the step down the tree and have to undo the (tentative) pairing just the same.
 
 The program file can be found [here](/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_final_version.py) and its output file [here](/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_final_version.txt). The output file shows that the final version of the program finds the solutions in the same order as the initial version but just performs a lot less unneccessary steps.
 
