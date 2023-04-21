@@ -43,7 +43,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <meta itemprop="description" content="In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
 The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):"><meta itemprop="datePublished" content="2023-04-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-04-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4106"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
+<meta itemprop="wordCount" content="4108"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
 <meta itemprop="keywords" content="" />
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -309,7 +309,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <li>90: Definition of the interval 1 &hellip; N = 60</li>
 <li>93: Definition of the set of target numbers {9, 36, 49, 64, 81}</li>
 <li>96: Calculation of the set of possible pairings. The term &ldquo;set&rdquo; is actually imprecise here as the <code>solve</code> procedure depends on the data structure exactly as returned by the auxiliary function <code>possible_pairings</code>: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the <a href="../../materials/blog/backtracking-algorithms/table-pairs">reference table</a>. Because each pair is listed twice, the total number of pairs in our example is 186.</li>
-<li>188/105: The two data structures <code>pos_taken</code> and <code>used_pairs</code> together correspond to my paper drawings: They track the current state of the partial solution:
+<li>98 - 105: The two data structures <code>pos_taken</code> and <code>used_pairs</code> together correspond to my paper drawings: They track the current state of the partial solution:
 <ul>
 <li><code>pos_taken</code> keeps track of which positions in the circle are already marked by a pair. The list is initialized with all <code>False</code> values as initially no position is taken.</li>
 <li><code>used_pairs</code> keeps track of the pairs used in the current partial solution. This is needed to print the solution when one has been found. The list is initially empty.</li>

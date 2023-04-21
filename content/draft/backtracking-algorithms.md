@@ -293,7 +293,7 @@ The main program begins on line 89:
 - 90: Definition of the interval 1 ... N = 60
 - 93: Definition of the set of target numbers {9, 36, 49, 64, 81}
 - 96: Calculation of the set of possible pairings. The term "set" is actually imprecise here as the `solve` procedure depends on the data structure exactly as returned by the auxiliary function `possible_pairings`: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Because each pair is listed twice, the total number of pairs in our example is 186.
-- 188/105: The two data structures `pos_taken` and `used_pairs` together correspond to my paper drawings: They track the current state of the partial solution:
+- 98 - 105: The two data structures `pos_taken` and `used_pairs` together correspond to my paper drawings: They track the current state of the partial solution:
   - `pos_taken` keeps track of which positions in the circle are already marked by a pair. The list is initialized with all `False` values as initially no position is taken.
   - `used_pairs` keeps track of the pairs used in the current partial solution. This is needed to print the solution when one has been found. The list is initially empty.
 - 107 - 117: Some initial output
