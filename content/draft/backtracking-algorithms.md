@@ -157,7 +157,7 @@ But taking also the fourth column of the table into account (for all numbers gre
 
 Taking this effect of the current pairing on potential future pairings into account allows to stop and retrace much earler, i.e. cut off huge subtrees of the search tree which otherwise would have been traversed without any result.
 
-If this additional check is incorporated into the forward-running algorithm which before took more than an hour to run and executed 5.2 billion steps, the program runs even slightly faster than the backward-running algorithm (it takes about 1:50 minutes on the same machine) and uses less than 2 million steps!
+If this additional check is incorporated into the forward-running algorithm which before took more than an hour to run and executed 5.2 billion steps, the program has roughly the same execution time as the backward-running algorithm (around 2 minutes) and uses less than 2 million steps! The number of steps is massively smaller even than for the backward-running algorithm but unfortunately the effect on execution time is insignificant as more checks have to be performed at each step. The two effects seem to cancel each other out performance-wise. Nevertheless, I prefer this final version of the algorithm to the backward-running version because I believe it is more general, i.e. less dependant on the concrete problem and its tree structure. I would expect it to perform generally better also for other target sets like Fibonacci numbers or prime numbers, but I have not done any analysis to support this claim.
 
 As promised, I will now show and explain the full program in its final version:
 
@@ -167,14 +167,14 @@ import functools
 # function which calculates and returns the set of all possible pairs of numbers
 # from 1...N which satisfy the condition that their sum is in the targets set
 def possible_pairings(N, targets):
-    result_list = []
-    for i in range(1, N+1):
-        result_list.append([])
-    for i in range(1, N+1):
-        for j in range(1, N+1):
-            if i != j and i + j in targets:
-                result_list[i-1].append(j)
-    return result_list
+  result_list = []
+  for i in range(1, N+1):
+    result_list.append([])
+  for i in range(1, N+1):
+    for j in range(1, N+1):
+      if i != j and i + j in targets:
+        result_list[i-1].append(j)
+  return result_list
 
 # global counter to keep track of the number of solutions found
 solution_count = 0
@@ -185,59 +185,70 @@ recursion_count = 0
 # recursive solver procedure
 def solve(pos):
 
-    global recursion_count
-    recursion_count = recursion_count + 1
+  global recursion_count
+  recursion_count = recursion_count + 1
 
-    # if all positions in the circle have been taken,
-    # a solution to the puzzle has been found
-    if pos == N+1:
-        global solution_count
-        solution_count = solution_count + 1
-        log = "After " + str(recursion_count) + " total calls to 'solve()': "
-        log = log + "solution no " + str(solution_count) + ": "
-        print(log)
-        print(used_pairs)
+  # if all positions in the circle have been taken,
+  # a solution to the puzzle has been found
+  if pos == N+1:
+    global solution_count
+    solution_count = solution_count + 1
+    log = "After " + str(recursion_count) + " total calls to 'solve()': "
+    log = log + "solution no " + str(solution_count) + ": "
+    print(log)
+    print(used_pairs)
 
-    # if the current position in the circle has already been taken by the second
-    # element of a pair placed earlier, then move on to the next position
-    elif pos_taken[pos-1]:
-        solve(pos+1)
-    else:
+  # if the current position in the circle has already been taken by the second
+  # element of a pair placed earlier, then move on to the next position
+  elif pos_taken[pos-1]:
+    solve(pos+1)
+  else:
 
-        # else iterate over all possible pairs for the current position
-        for paired_pos in possible_pairs[pos-1]:
+    # else iterate over all possible pairs for the current position
+    for paired_pos in possible_pairs[pos-1]:
 
-            # if the position of the pair's second element is also available...
-            if not pos_taken[paired_pos-1]:
+      # if the position of the pair's second element is also available...
+      if not pos_taken[paired_pos-1]:
 
-                # ... then remember the currently used pair
-                # and mark both positions in the circle, ...
-                used_pairs.append([pos, paired_pos])
-                pos_taken[pos-1] = True
-                pos_taken[paired_pos-1] = True
+        # ... then remember the currently used pair
+        # and tentatively mark both positions in the circle.
+        used_pairs.append([pos, paired_pos])
+        pos_taken[pos-1] = True
+        pos_taken[paired_pos-1] = True
 
-                # --> the above three lines already simulate the current move; 
-                # check its effects before actually making the move 
-                # and stepping one level down the tree.
-                all_future_pos_reachable = True
-                for p in range(pos+1, N+1):
-                    if not pos_taken[p-1]:
-                        p_reachable = False
-                        for paired_p in possible_pairs[p-1]:
-                            if not pos_taken[paired_p-1]:
-                                p_reachable = True
-                        if not p_reachable:
-                            all_future_pos_reachable = False
+        # The above three lines already simulate the current move; 
+        # check its effects before actually making the move 
+        # and stepping one level down the tree.
 
-                if all_future_pos_reachable:        
-                    # ... move on to the next position and then...
-                    solve(pos+1)
+        # positive assumption: all future pairs reachable, i.e. for
+        # every position not yet taken, there exists a pair position
+        # not yet taken
+        all_future_pos_reachable = True
 
-                # ... trace back by releasing the used pair 
-                # and unmarking the two positions in the circle
-                used_pairs.pop()
-                pos_taken[pos-1] = False
-                pos_taken[paired_pos-1] = False
+        # for every future postition, try to prove assumption wrong 
+        for p in range(pos+1, N+1):
+          if not pos_taken[p-1]:
+                      
+            # negative assumption: no more pair position available
+            paired_p_reachable = False
+
+            # try to prove assumption wrong 
+            for paired_p in possible_pairs[p-1]:
+              if not pos_taken[paired_p-1]:
+                paired_p_reachable = True
+                
+            if not paired_p_reachable:
+              all_future_pos_reachable = False
+
+        if all_future_pos_reachable:        
+          # move on to the next position
+          solve(pos+1)
+
+        # trace back by releasing the used pair 
+        # and unmarking the two positions in the circle
+        used_pairs.pop()
+        pos_taken[pos-1] = False
+        pos_taken[paired_pos-1] = False
 
 # upper bound N of the interval of numbers 1...N in the circle
 N = 60
@@ -252,7 +263,7 @@ possible_pairs = possible_pairings(N, targets)
 # which are already taken and which are still unoccupied
 pos_taken = []
 for i in range(1, N+1):
-    pos_taken.append(False)
+  pos_taken.append(False)
 
 # list of all the pairs currently used in the backtracking algorithm
 used_pairs = []
@@ -264,7 +275,10 @@ print()
 print("Possible partner positions for each position 1 ... " + str(N) + ":")
 print(possible_pairs)
 print()
-print("Number of possible pairs: " + str(round(functools.reduce(lambda a, b: a+b, list(map(lambda li: len(li), possible_pairs)))/2)))
+
+li = list(map(lambda li: len(li), possible_pairs))
+num_pos_pairs = round(functools.reduce(lambda a, b: a+b, li)/2)
+print("Number of possible pairs: " + str(num_pos_pairs))
 
 solve(1)
 
@@ -275,16 +289,16 @@ log = log + " calls to recursive solver function."
 print(log)
 ```
 
-The main program begins on line 78:
-- 79: Definition of the interval 1 ... N = 60
-- 82: Definition of the set of target numbers {9, 36, 49, 64, 81}
-- 85: Calculation of the set of possible pairings. The term "set" is actually imprecise here as the `solve` procedure depends on the data structure exactly as returned by the auxiliary function `possible_pairings`: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Because each pair is listed twice, the total number of pairs in our example is 186.
-- 89/94: The two data structures `pos_taken` and `used_pairs` together correspond to my paper drawings: They track the current state of the partial solution:
+The main program begins on line 89:
+- 90: Definition of the interval 1 ... N = 60
+- 93: Definition of the set of target numbers {9, 36, 49, 64, 81}
+- 96: Calculation of the set of possible pairings. The term "set" is actually imprecise here as the `solve` procedure depends on the data structure exactly as returned by the auxiliary function `possible_pairings`: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Because each pair is listed twice, the total number of pairs in our example is 186.
+- 188/105: The two data structures `pos_taken` and `used_pairs` together correspond to my paper drawings: They track the current state of the partial solution:
   - `pos_taken` keeps track of which positions in the circle are already marked by a pair. The list is initialized with all `False` values as initially no position is taken.
   - `used_pairs` keeps track of the pairs used in the current partial solution. This is needed to print the solution when one has been found. The list is initially empty.
-- 96 - 103: Some initial output
-- 105: Execution of the `solve` procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.
-- 107 - 111: Some final output
+- 107 - 117: Some initial output
+- 119: Execution of the `solve` procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.
+- 121 - 125: Some final output
 
 The main program depends on functions, procedures and variables defined and implemented in lines 1 - 76.
 
@@ -293,7 +307,7 @@ Lines 1 - 19 contain a function implementation and the definition of two counter
 - 16: Definition of a counter for the number of solutions already found.
 - 19: Defintion of the number of recursions already executed, i.e. the number of times procedure `solve` has already been called.
 
-Lines 21 - 76 contain the definition and implementation of the `solve` procedure which contains all the backtracking logic:
+Lines 21 - 87 contain the definition and implementation of the `solve` procedure which contains all the backtracking logic:
 - 25: Increment the recursion counter
 - 29: If we are at position N+1, a solution has been found:
   - 31: Increment the solution counter
@@ -304,9 +318,9 @@ Lines 21 - 76 contain the definition and implementation of the `solve` procedure
   - 44: We loop over all possible pair positions of the current position:
     - 47: If a possible pair position is not already taken (i.e. paired with a lower position), then
       - 51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.
-      - 55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.
-      - 68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call `solve(pos+1)`.
-      - 72 - 76: At this point, either `solve(pos+1)` has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we could not make the step down the tree and have to undo the (tentative) pairing just the same.
+      - 55 - 77: These 23 lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of 24 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.
+      - 79/81: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call `solve(pos+1)`.
+      - 83 - 87: At this point, either `solve(pos+1)` has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we could not make the step down the tree and have to undo the (tentative) pairing just the same.
 
 The program file can be found [here](/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_final_version.py) and its output file [here](/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_final_version.txt). The output file shows that the final version of the program finds the solutions in the same order as the initial version but just performs a lot less unneccessary steps.
 

@@ -43,7 +43,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <meta itemprop="description" content="In this post I tell the story of a beautiful picture which represents an interesting mathematical problem whose algorithmic solution has some analogy to the agile way of making progress.
 The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired as a teacher, not as a mathematician&rdquo;) daily posts mathematical puzzles, bits of history or just &ldquo;fun facts&rdquo; on twitter. On March 1st, 2022, which was the 60th day of the year, he tweeted the following (translation from German is mine):"><meta itemprop="datePublished" content="2023-04-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-04-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="3947"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
+<meta itemprop="wordCount" content="4106"><meta itemprop="image" content="https://walkagile.com/hugo-bearcub/images/share.webp"/>
 <meta itemprop="keywords" content="" />
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -177,21 +177,21 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <p>But taking also the fourth column of the table into account (for all numbers greater than 15), I see that 60 can only be paired with 4 and 21. As 4 is already paired with 5, I cannot pair 15 with 21 now; I have to leave 21 free to be paired with 60. I will therefore try the second option for 15 right away, which is 34. I thus save myself from taking a wrong turn at this junction and traversing many additional subtrees which would not yield any result. 16 on the other hand can be paired with 20 as in the initial version of the algorithm (figure 16):</p>
 <p><img src="/images/blog/backtracking-algorithms/backtracking_14_12_pairs.png" alt="backtracking 14: 12 pairs"></p>
 <p>Taking this effect of the current pairing on potential future pairings into account allows to stop and retrace much earler, i.e. cut off huge subtrees of the search tree which otherwise would have been traversed without any result.</p>
-<p>If this additional check is incorporated into the forward-running algorithm which before took more than an hour to run and executed 5.2 billion steps, the program runs even slightly faster than the backward-running algorithm (it takes about 1:50 minutes on the same machine) and uses less than 2 million steps!</p>
+<p>If this additional check is incorporated into the forward-running algorithm which before took more than an hour to run and executed 5.2 billion steps, the program has roughly the same execution time as the backward-running algorithm (around 2 minutes) and uses less than 2 million steps! The number of steps is massively smaller even than for the backward-running algorithm but unfortunately the effect on execution time is insignificant as more checks have to be performed at each step. The two effects seem to cancel each other out performance-wise. Nevertheless, I prefer this final version of the algorithm to the backward-running version because I believe it is more general, i.e. less dependant on the concrete problem and its tree structure. I would expect it to perform generally better also for other target sets like Fibonacci numbers or prime numbers, but I have not done any analysis to support this claim.</p>
 <p>As promised, I will now show and explain the full program in its final version:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="ln">  1</span><span class="kn">import</span> <span class="nn">functools</span>
 <span class="ln">  2</span>
 <span class="ln">  3</span><span class="c1"># function which calculates and returns the set of all possible pairs of numbers</span>
 <span class="ln">  4</span><span class="c1"># from 1...N which satisfy the condition that their sum is in the targets set</span>
 <span class="ln">  5</span><span class="k">def</span> <span class="nf">possible_pairings</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">targets</span><span class="p">):</span>
-<span class="ln">  6</span>    <span class="n">result_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="ln">  7</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<span class="ln">  8</span>        <span class="n">result_list</span><span class="o">.</span><span class="n">append</span><span class="p">([])</span>
-<span class="ln">  9</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<span class="ln"> 10</span>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<span class="ln"> 11</span>            <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">targets</span><span class="p">:</span>
-<span class="ln"> 12</span>                <span class="n">result_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
-<span class="ln"> 13</span>    <span class="k">return</span> <span class="n">result_list</span>
+<span class="ln">  6</span>  <span class="n">result_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ln">  7</span>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="ln">  8</span>    <span class="n">result_list</span><span class="o">.</span><span class="n">append</span><span class="p">([])</span>
+<span class="ln">  9</span>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="ln"> 10</span>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="ln"> 11</span>      <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">targets</span><span class="p">:</span>
+<span class="ln"> 12</span>        <span class="n">result_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<span class="ln"> 13</span>  <span class="k">return</span> <span class="n">result_list</span>
 <span class="ln"> 14</span>
 <span class="ln"> 15</span><span class="c1"># global counter to keep track of the number of solutions found</span>
 <span class="ln"> 16</span><span class="n">solution_count</span> <span class="o">=</span> <span class="mi">0</span>
@@ -202,108 +202,122 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <span class="ln"> 21</span><span class="c1"># recursive solver procedure</span>
 <span class="ln"> 22</span><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
 <span class="ln"> 23</span>
-<span class="ln"> 24</span>    <span class="k">global</span> <span class="n">recursion_count</span>
-<span class="ln"> 25</span>    <span class="n">recursion_count</span> <span class="o">=</span> <span class="n">recursion_count</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="ln"> 24</span>  <span class="k">global</span> <span class="n">recursion_count</span>
+<span class="ln"> 25</span>  <span class="n">recursion_count</span> <span class="o">=</span> <span class="n">recursion_count</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="ln"> 26</span>
-<span class="ln"> 27</span>    <span class="c1"># if all positions in the circle have been taken,</span>
-<span class="ln"> 28</span>    <span class="c1"># a solution to the puzzle has been found</span>
-<span class="ln"> 29</span>    <span class="k">if</span> <span class="n">pos</span> <span class="o">==</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span>
-<span class="ln"> 30</span>        <span class="k">global</span> <span class="n">solution_count</span>
-<span class="ln"> 31</span>        <span class="n">solution_count</span> <span class="o">=</span> <span class="n">solution_count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="ln"> 32</span>        <span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;After &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recursion_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; total calls to &#39;solve()&#39;: &#34;</span>
-<span class="ln"> 33</span>        <span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34;solution no &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">solution_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;: &#34;</span>
-<span class="ln"> 34</span>        <span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
-<span class="ln"> 35</span>        <span class="nb">print</span><span class="p">(</span><span class="n">used_pairs</span><span class="p">)</span>
+<span class="ln"> 27</span>  <span class="c1"># if all positions in the circle have been taken,</span>
+<span class="ln"> 28</span>  <span class="c1"># a solution to the puzzle has been found</span>
+<span class="ln"> 29</span>  <span class="k">if</span> <span class="n">pos</span> <span class="o">==</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span>
+<span class="ln"> 30</span>    <span class="k">global</span> <span class="n">solution_count</span>
+<span class="ln"> 31</span>    <span class="n">solution_count</span> <span class="o">=</span> <span class="n">solution_count</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="ln"> 32</span>    <span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;After &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recursion_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34; total calls to &#39;solve()&#39;: &#34;</span>
+<span class="ln"> 33</span>    <span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34;solution no &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">solution_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;: &#34;</span>
+<span class="ln"> 34</span>    <span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
+<span class="ln"> 35</span>    <span class="nb">print</span><span class="p">(</span><span class="n">used_pairs</span><span class="p">)</span>
 <span class="ln"> 36</span>
-<span class="ln"> 37</span>    <span class="c1"># if the current position in the circle has already been taken by the second</span>
-<span class="ln"> 38</span>    <span class="c1"># element of a pair placed earlier, then move on to the next position</span>
-<span class="ln"> 39</span>    <span class="k">elif</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-<span class="ln"> 40</span>        <span class="n">solve</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="ln"> 41</span>    <span class="k">else</span><span class="p">:</span>
+<span class="ln"> 37</span>  <span class="c1"># if the current position in the circle has already been taken by the second</span>
+<span class="ln"> 38</span>  <span class="c1"># element of a pair placed earlier, then move on to the next position</span>
+<span class="ln"> 39</span>  <span class="k">elif</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 40</span>    <span class="n">solve</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="ln"> 41</span>  <span class="k">else</span><span class="p">:</span>
 <span class="ln"> 42</span>
-<span class="ln"> 43</span>        <span class="c1"># else iterate over all possible pairs for the current position</span>
-<span class="ln"> 44</span>        <span class="k">for</span> <span class="n">paired_pos</span> <span class="ow">in</span> <span class="n">possible_pairs</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 43</span>    <span class="c1"># else iterate over all possible pairs for the current position</span>
+<span class="ln"> 44</span>    <span class="k">for</span> <span class="n">paired_pos</span> <span class="ow">in</span> <span class="n">possible_pairs</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
 <span class="ln"> 45</span>
-<span class="ln"> 46</span>            <span class="c1"># if the position of the pair&#39;s second element is also available...</span>
-<span class="ln"> 47</span>            <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 46</span>      <span class="c1"># if the position of the pair&#39;s second element is also available...</span>
+<span class="ln"> 47</span>      <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
 <span class="ln"> 48</span>
-<span class="ln"> 49</span>                <span class="c1"># ... then remember the currently used pair</span>
-<span class="ln"> 50</span>                <span class="c1"># and mark both positions in the circle, ...</span>
-<span class="ln"> 51</span>                <span class="n">used_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">pos</span><span class="p">,</span> <span class="n">paired_pos</span><span class="p">])</span>
-<span class="ln"> 52</span>                <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="ln"> 53</span>                <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ln"> 49</span>        <span class="c1"># ... then remember the currently used pair</span>
+<span class="ln"> 50</span>        <span class="c1"># and tentatively mark both positions in the circle.</span>
+<span class="ln"> 51</span>        <span class="n">used_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">pos</span><span class="p">,</span> <span class="n">paired_pos</span><span class="p">])</span>
+<span class="ln"> 52</span>        <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ln"> 53</span>        <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="ln"> 54</span>
-<span class="ln"> 55</span>                <span class="c1"># --&gt; the above three lines already simulate the current move; </span>
-<span class="ln"> 56</span>                <span class="c1"># check its effects before actually making the move </span>
-<span class="ln"> 57</span>                <span class="c1"># and stepping one level down the tree.</span>
-<span class="ln"> 58</span>                <span class="n">all_future_pos_reachable</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="ln"> 59</span>                <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<span class="ln"> 60</span>                    <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-<span class="ln"> 61</span>                        <span class="n">p_reachable</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ln"> 62</span>                        <span class="k">for</span> <span class="n">paired_p</span> <span class="ow">in</span> <span class="n">possible_pairs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-<span class="ln"> 63</span>                            <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-<span class="ln"> 64</span>                                <span class="n">p_reachable</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="ln"> 65</span>                        <span class="k">if</span> <span class="ow">not</span> <span class="n">p_reachable</span><span class="p">:</span>
-<span class="ln"> 66</span>                            <span class="n">all_future_pos_reachable</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ln"> 67</span>
-<span class="ln"> 68</span>                <span class="k">if</span> <span class="n">all_future_pos_reachable</span><span class="p">:</span>        
-<span class="ln"> 69</span>                    <span class="c1"># ... move on to the next position and then...</span>
-<span class="ln"> 70</span>                    <span class="n">solve</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-<span class="ln"> 71</span>
-<span class="ln"> 72</span>                <span class="c1"># ... trace back by releasing the used pair </span>
-<span class="ln"> 73</span>                <span class="c1"># and unmarking the two positions in the circle</span>
-<span class="ln"> 74</span>                <span class="n">used_pairs</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="ln"> 75</span>                <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ln"> 76</span>                <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ln"> 77</span>
-<span class="ln"> 78</span><span class="c1"># upper bound N of the interval of numbers 1...N in the circle</span>
-<span class="ln"> 79</span><span class="n">N</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="ln"> 80</span>
-<span class="ln"> 81</span><span class="c1"># set of target numbers for the pairs</span>
-<span class="ln"> 82</span><span class="n">targets</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">)</span>
-<span class="ln"> 83</span>
-<span class="ln"> 84</span><span class="c1"># the set of possible pairs which satisfy the target </span>
-<span class="ln"> 85</span><span class="n">possible_pairs</span> <span class="o">=</span> <span class="n">possible_pairings</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
-<span class="ln"> 86</span>
-<span class="ln"> 87</span><span class="c1"># list of the positions 1 ... N to keep track of </span>
-<span class="ln"> 88</span><span class="c1"># which are already taken and which are still unoccupied</span>
-<span class="ln"> 89</span><span class="n">pos_taken</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="ln"> 90</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<span class="ln"> 91</span>    <span class="n">pos_taken</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="ln"> 92</span>
-<span class="ln"> 93</span><span class="c1"># list of all the pairs currently used in the backtracking algorithm</span>
-<span class="ln"> 94</span><span class="n">used_pairs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="ln"> 95</span>
-<span class="ln"> 96</span><span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;Calculating Rainbow Pairs for 1 ... &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-<span class="ln"> 97</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; for target set &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">targets</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span>
-<span class="ln"> 98</span><span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
-<span class="ln"> 99</span><span class="nb">print</span><span class="p">()</span>
-<span class="ln">100</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Possible partner positions for each position 1 ... &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span><span class="p">)</span>
-<span class="ln">101</span><span class="nb">print</span><span class="p">(</span><span class="n">possible_pairs</span><span class="p">)</span>
-<span class="ln">102</span><span class="nb">print</span><span class="p">()</span>
-<span class="ln">103</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of possible pairs: &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">functools</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">li</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">li</span><span class="p">),</span> <span class="n">possible_pairs</span><span class="p">)))</span><span class="o">/</span><span class="mi">2</span><span class="p">)))</span>
-<span class="ln">104</span>
-<span class="ln">105</span><span class="n">solve</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="ln"> 55</span>        <span class="c1"># The above three lines already simulate the current move; </span>
+<span class="ln"> 56</span>        <span class="c1"># check its effects before actually making the move </span>
+<span class="ln"> 57</span>        <span class="c1"># and stepping one level down the tree.</span>
+<span class="ln"> 58</span>
+<span class="ln"> 59</span>        <span class="c1"># positive assumption: all future pairs reachable, i.e. for</span>
+<span class="ln"> 60</span>        <span class="c1"># every position not yet taken, there exists a pair position</span>
+<span class="ln"> 61</span>        <span class="c1"># not yet taken</span>
+<span class="ln"> 62</span>        <span class="n">all_future_pos_reachable</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ln"> 63</span>
+<span class="ln"> 64</span>        <span class="c1"># for every future postition, try to prove assumption wrong </span>
+<span class="ln"> 65</span>        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="ln"> 66</span>          <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 67</span>                      
+<span class="ln"> 68</span>            <span class="c1"># negative assumption: no more pair position available</span>
+<span class="ln"> 69</span>            <span class="n">paired_p_reachable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ln"> 70</span>
+<span class="ln"> 71</span>            <span class="c1"># try to prove assumption wrong </span>
+<span class="ln"> 72</span>            <span class="k">for</span> <span class="n">paired_p</span> <span class="ow">in</span> <span class="n">possible_pairs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 73</span>              <span class="k">if</span> <span class="ow">not</span> <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_p</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+<span class="ln"> 74</span>                <span class="n">paired_p_reachable</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ln"> 75</span>                
+<span class="ln"> 76</span>            <span class="k">if</span> <span class="ow">not</span> <span class="n">paired_p_reachable</span><span class="p">:</span>
+<span class="ln"> 77</span>              <span class="n">all_future_pos_reachable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ln"> 78</span>
+<span class="ln"> 79</span>        <span class="k">if</span> <span class="n">all_future_pos_reachable</span><span class="p">:</span>        
+<span class="ln"> 80</span>          <span class="c1"># move on to the next position</span>
+<span class="ln"> 81</span>          <span class="n">solve</span><span class="p">(</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="ln"> 82</span>
+<span class="ln"> 83</span>        <span class="c1"># trace back by releasing the used pair </span>
+<span class="ln"> 84</span>        <span class="c1"># and unmarking the two positions in the circle</span>
+<span class="ln"> 85</span>        <span class="n">used_pairs</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="ln"> 86</span>        <span class="n">pos_taken</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ln"> 87</span>        <span class="n">pos_taken</span><span class="p">[</span><span class="n">paired_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ln"> 88</span>
+<span class="ln"> 89</span><span class="c1"># upper bound N of the interval of numbers 1...N in the circle</span>
+<span class="ln"> 90</span><span class="n">N</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="ln"> 91</span>
+<span class="ln"> 92</span><span class="c1"># set of target numbers for the pairs</span>
+<span class="ln"> 93</span><span class="n">targets</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">)</span>
+<span class="ln"> 94</span>
+<span class="ln"> 95</span><span class="c1"># the set of possible pairs which satisfy the target </span>
+<span class="ln"> 96</span><span class="n">possible_pairs</span> <span class="o">=</span> <span class="n">possible_pairings</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
+<span class="ln"> 97</span>
+<span class="ln"> 98</span><span class="c1"># list of the positions 1 ... N to keep track of </span>
+<span class="ln"> 99</span><span class="c1"># which are already taken and which are still unoccupied</span>
+<span class="ln">100</span><span class="n">pos_taken</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ln">101</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="ln">102</span>  <span class="n">pos_taken</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="ln">103</span>
+<span class="ln">104</span><span class="c1"># list of all the pairs currently used in the backtracking algorithm</span>
+<span class="ln">105</span><span class="n">used_pairs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="ln">106</span>
-<span class="ln">107</span><span class="nb">print</span><span class="p">()</span>
-<span class="ln">108</span><span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;Calculation terminated. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">solution_count</span><span class="p">)</span>
-<span class="ln">109</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; solutions found with &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recursion_count</span><span class="p">)</span>
-<span class="ln">110</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; calls to recursive solver function.&#34;</span>
-<span class="ln">111</span><span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
-</code></pre></div><p>The main program begins on line 78:</p>
+<span class="ln">107</span><span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;Calculating Rainbow Pairs for 1 ... &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="ln">108</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; for target set &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">targets</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span>
+<span class="ln">109</span><span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
+<span class="ln">110</span><span class="nb">print</span><span class="p">()</span>
+<span class="ln">111</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Possible partner positions for each position 1 ... &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;:&#34;</span><span class="p">)</span>
+<span class="ln">112</span><span class="nb">print</span><span class="p">(</span><span class="n">possible_pairs</span><span class="p">)</span>
+<span class="ln">113</span><span class="nb">print</span><span class="p">()</span>
+<span class="ln">114</span>
+<span class="ln">115</span><span class="n">li</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">li</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">li</span><span class="p">),</span> <span class="n">possible_pairs</span><span class="p">))</span>
+<span class="ln">116</span><span class="n">num_pos_pairs</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">functools</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="ln">117</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Number of possible pairs: &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_pos_pairs</span><span class="p">))</span>
+<span class="ln">118</span>
+<span class="ln">119</span><span class="n">solve</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="ln">120</span>
+<span class="ln">121</span><span class="nb">print</span><span class="p">()</span>
+<span class="ln">122</span><span class="n">log</span> <span class="o">=</span> <span class="s2">&#34;Calculation terminated. &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">solution_count</span><span class="p">)</span>
+<span class="ln">123</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; solutions found with &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">recursion_count</span><span class="p">)</span>
+<span class="ln">124</span><span class="n">log</span> <span class="o">=</span> <span class="n">log</span> <span class="o">+</span> <span class="s2">&#34; calls to recursive solver function.&#34;</span>
+<span class="ln">125</span><span class="nb">print</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
+</code></pre></div><p>The main program begins on line 89:</p>
 <ul>
-<li>79: Definition of the interval 1 &hellip; N = 60</li>
-<li>82: Definition of the set of target numbers {9, 36, 49, 64, 81}</li>
-<li>85: Calculation of the set of possible pairings. The term &ldquo;set&rdquo; is actually imprecise here as the <code>solve</code> procedure depends on the data structure exactly as returned by the auxiliary function <code>possible_pairings</code>: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the <a href="../../materials/blog/backtracking-algorithms/table-pairs">reference table</a>. Because each pair is listed twice, the total number of pairs in our example is 186.</li>
-<li>89/94: The two data structures <code>pos_taken</code> and <code>used_pairs</code> together correspond to my paper drawings: They track the current state of the partial solution:
+<li>90: Definition of the interval 1 &hellip; N = 60</li>
+<li>93: Definition of the set of target numbers {9, 36, 49, 64, 81}</li>
+<li>96: Calculation of the set of possible pairings. The term &ldquo;set&rdquo; is actually imprecise here as the <code>solve</code> procedure depends on the data structure exactly as returned by the auxiliary function <code>possible_pairings</code>: a list of N lists where each list corresponds to the possible pairings for number i, i running from 1 to N. This corresponds exactly to the fourth column of the <a href="../../materials/blog/backtracking-algorithms/table-pairs">reference table</a>. Because each pair is listed twice, the total number of pairs in our example is 186.</li>
+<li>188/105: The two data structures <code>pos_taken</code> and <code>used_pairs</code> together correspond to my paper drawings: They track the current state of the partial solution:
 <ul>
 <li><code>pos_taken</code> keeps track of which positions in the circle are already marked by a pair. The list is initialized with all <code>False</code> values as initially no position is taken.</li>
 <li><code>used_pairs</code> keeps track of the pairs used in the current partial solution. This is needed to print the solution when one has been found. The list is initially empty.</li>
 </ul>
 </li>
-<li>96 - 103: Some initial output</li>
-<li>105: Execution of the <code>solve</code> procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.</li>
-<li>107 - 111: Some final output</li>
+<li>107 - 117: Some initial output</li>
+<li>119: Execution of the <code>solve</code> procedure for the first position. As this is a recursive procedure, it will execute again and again until all solutions have been found.</li>
+<li>121 - 125: Some final output</li>
 </ul>
 <p>The main program depends on functions, procedures and variables defined and implemented in lines 1 - 76.</p>
 <p>Lines 1 - 19 contain a function implementation and the definition of two counters:</p>
@@ -312,7 +326,7 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <li>16: Definition of a counter for the number of solutions already found.</li>
 <li>19: Defintion of the number of recursions already executed, i.e. the number of times procedure <code>solve</code> has already been called.</li>
 </ul>
-<p>Lines 21 - 76 contain the definition and implementation of the <code>solve</code> procedure which contains all the backtracking logic:</p>
+<p>Lines 21 - 87 contain the definition and implementation of the <code>solve</code> procedure which contains all the backtracking logic:</p>
 <ul>
 <li>25: Increment the recursion counter</li>
 <li>29: If we are at position N+1, a solution has been found:
@@ -330,9 +344,9 @@ The picture My former highschool math teacher Hansruedi Widmer (&ldquo;retired a
 <li>47: If a possible pair position is not already taken (i.e. paired with a lower position), then
 <ul>
 <li>51 - 53: Tentatively add the current position and the current pair position to the list of used  pairs and mark the current position and the possible pair position as taken.</li>
-<li>55 - 66: These twelve lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of almost 30 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.</li>
-<li>68/70: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call <code>solve(pos+1)</code>.</li>
-<li>72 - 76: At this point, either <code>solve(pos+1)</code> has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we could not make the step down the tree and have to undo the (tentative) pairing just the same.</li>
+<li>55 - 77: These 23 lines are the main improvement over the initial version of the program, causing the execution time to improve by a factor of 24 and the number of recursive calls to decrease by a factor of more than 2500: Check for all positions not yet taken, whether there also exists a possible pairing not yet taken.</li>
+<li>79/81: Only if all future positions are still reachable, keep the current pair and move on to the next position, i.e. call <code>solve(pos+1)</code>.</li>
+<li>83 - 87: At this point, either <code>solve(pos+1)</code> has been executed (which includes all its recursive executions) because all future position were still reachable with the current pair, or it has not been executed because at least one future position would no longer have been reachable. In the first case, we are now on the way up the tree again and have to undo the current pairing made in lines 51 - 53. In the second case, we could not make the step down the tree and have to undo the (tentative) pairing just the same.</li>
 </ul>
 </li>
 </ul>
