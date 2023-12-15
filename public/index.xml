@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Peter Häfliger</copyright>
-    <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More Fun with Retrospectives: Check your rearview mirror!</title>
+      <link>https://walkagile.com/blog/more-fun-with-retrospectives/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/blog/more-fun-with-retrospectives/</guid>
+      <description>This is the translation of my blog post written in German as an assignment for the CAS DevOps Leadership and Agile Methods which I am currently doing at the Lucerne University of Applied Sciences and Arts. The translation is rather free, as self-translations usually are, because the author can allow themself full liberties. But let me first explain the context of the course assignment:
+During the course, a colleague brought up the question of how shy team members can be encouraged to speak up in a retro.</description>
+    </item>
+    
     <item>
       <title>Backtracking algorithms: experiment, inspect and adapt</title>
       <link>https://walkagile.com/draft/backtracking-algorithms/</link>
