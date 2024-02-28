@@ -8,7 +8,7 @@ In this article I tell the story of a beautiful **picture** which represents an 
 
 ## The picture
 
-My former highschool math teacher [Hansruedi Widmer](https://www.linkedin.com/in/hansruediwidmer/) ("retired as a teacher, not as a mathematician") daily posts mathematical puzzles, bits of history or just "fun facts" on X (formerly known as twitter). Two years ago, on March 1{{< super "st" >}}, 2022, which was the 60{{< super "th" >}} day of the year, he tweeted the following (translation from German is mine): 
+My former high school math teacher [Hansruedi Widmer](https://www.linkedin.com/in/hansruediwidmer/) ("retired as a teacher, not as a mathematician") daily posts mathematical puzzles, bits of history or just "fun facts" on X (formerly known as twitter). Two years ago, on March 1{{< super "st" >}}, 2022, which was the 60{{< super "th" >}} day of the year, he tweeted the following (translation from German is mine): 
 
 > As it is day 60: The numbers from 1 to 60 can be paired in such a way that the sum of every pair is one of the square numbers 3{{< super "2" >}}, 6{{< super "2" >}}, 7{{< super "2" >}}, 8{{< super "2" >}}, 9{{< super "2" >}}.
 >
