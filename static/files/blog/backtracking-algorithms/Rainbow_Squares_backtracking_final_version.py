@@ -61,7 +61,7 @@ def solve(pos):
         # not yet taken
         all_future_pos_reachable = True
 
-        # for every future postition, try to prove assumption wrong 
+        # for every future position, try to prove assumption wrong 
         for p in range(pos+1, N+1):
           if not pos_taken[p-1]:
                       

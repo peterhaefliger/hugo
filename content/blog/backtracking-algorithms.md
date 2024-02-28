@@ -1,14 +1,14 @@
 ---
 title: "Backtracking algorithms: experiment, inspect and adapt"
-date: 2023-04-20
+date: 2024-02-28
 draft: false
 ---
 
-In this post I tell the story of a beautiful **picture** which represents an interesting mathematical **problem** whose algorithmic **solution** has some **analogy** to the agile way of making progress.
+In this article I tell the story of a beautiful **picture** which represents an interesting mathematical **problem** whose algorithmic **solution** has some **analogy** to the agile way of making progress.
 
 ## The picture
 
-My former highschool math teacher [Hansruedi Widmer](https://www.linkedin.com/in/hansruediwidmer/) ("retired as a teacher, not as a mathematician") daily posts mathematical puzzles, bits of history or just "fun facts" on twitter. On March 1{{< super "st" >}}, 2022, which was the 60{{< super "th" >}} day of the year, he tweeted the following (translation from German is mine): 
+My former highschool math teacher [Hansruedi Widmer](https://www.linkedin.com/in/hansruediwidmer/) ("retired as a teacher, not as a mathematician") daily posts mathematical puzzles, bits of history or just "fun facts" on X (formerly known as twitter). Two years ago, on March 1{{< super "st" >}}, 2022, which was the 60{{< super "th" >}} day of the year, he tweeted the following (translation from German is mine): 
 
 > As it is day 60: The numbers from 1 to 60 can be paired in such a way that the sum of every pair is one of the sqare numbers 3{{< super "2" >}}, 6{{< super "2" >}}, 7{{< super "2" >}}, 8{{< super "2" >}}, 9{{< super "2" >}}.
 >
@@ -19,6 +19,8 @@ My former highschool math teacher [Hansruedi Widmer](https://www.linkedin.com/in
 I found (and still find) this drawing (figure 1) very beautiful, like a piece of art, and I wanted to know more about the underlying mathematical problem:
 1. Is there more than one solution which satisfies the given constraints?
 2. And if yes, how can they be found?
+
+I have been thinking, experimenting and writing about this problem every once in a while, time and again, but something (new job, continuing professional education, family) always got in the way of finishing this article. But finally, on the occasion of the 60{{< super "th" >}} day of this year - which, because it is a leap year, is not on March 1{{< super "st" >}} but on February 29{{< super "th" >}} - I got it done. I hope you enjoy reading it as much as I enjoyed writing it.
 
 ## The problem
 
@@ -56,8 +58,6 @@ which is 2.200 x 10{{< super "24" >}}, i.e. 2.2 septillion, which is an enormous
 A web search led me to the [paper from the Mathematical Association of America( MAA)](https://www.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) from which the above picture must have been taken. I learned that the problem is called "rainbow squares" because of the way in which the pairs with equal sum are marked with the same color, or simply "rainbow pairs" for the more general case where the sums are subject to some constraint different from being square numbers (e.g. polynomials or Fibonacci numbers).
 
 I also learned from this paper that the number of solutions for the numbers from 1 to 60 where the sum is constraint to be *any* square, i.e. {4, 9, 16, 25, 36, 49, 64, 81, 100} is 4,366,714! But how many solutions would there be with the narrower constraint set {9, 36, 49, 64, 81}? And how could they be found?
-
-This was all valuable and interesting background information but did not explain *how* to find the solutions. 
 
 ### 2{{< super "nd" >}} attempt: slowly getting there
 
@@ -97,7 +97,7 @@ As I have said at the beginning, I have just marked the pairs *tentatively*, so 
 
 ![backtracking 8: 22 pairs](/images/blog/backtracking-algorithms/backtracking_8_22_pairs.png)
 
-Unfortunately, this is not enough because at this point I have no alternative for number 40 than the pair 41. So I have to trace further back until I arrive at the number for which there is an alternative path forward. This is number 30 (figure 10):
+Unfortunately, this is not enough because at this point I have no alternative for number 40 than to pair it with 41. So I have to trace further back until I arrive at the number for which there is an alternative path forward. This is number 30 (figure 10):
 
 ![backtracking 9: 22 pairs](/images/blog/backtracking-algorithms/backtracking_9_16_pairs.png)
 
@@ -121,7 +121,7 @@ This type of algorithm is called [backtracking algorithm](https://en.wikipedia.o
 
 I implemented the algorithm in python. The program file can be found [here](/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_first_version.py) and its output file [here](/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_first_version.txt). I will not explain the program here; I will explain the final version at the end of this solution section.
 
-This first version worked exactly as shown in the figures above. It found 5294 solutions but ran 48 minutes on my machine (normal laptop, not quite new, nothing optimized, so the measurement is just for relative comparison with the improvements shown further below). That was disappointing and unexpected, because for an average Sudoku, a backtracking algorithm finds the solutions in a few seconds or even less than a second. Analysis showed that the algorithm had performed 5.2 billion tentative steps whereas an average Sudoku only requires something between 10,000 and 100,000 or in an extreme case maybe a million steps. The reason is that Sudokus are very highly constraint puzzles where many alternatives can be excluded early on. For this problem, on the other hand, even first solution is only found after more than 47 million steps which means I could never have found it by hand within my lifetime.
+This first version worked exactly as shown in the figures above. It found 5294 solutions but ran 48 minutes on my machine (normal laptop, not quite new, nothing optimized, so the measurement is just for relative comparison with the improvements shown further below). That was disappointing and unexpected, because for an average Sudoku, a backtracking algorithm finds the solutions in a few seconds or even less than a second. Analysis showed that the algorithm had performed 5.2 billion tentative steps whereas an average Sudoku only requires something between 10,000 and 100,000 or in an extreme case maybe a million steps. The reason is that Sudokus are very highly constraint puzzles where many alternatives can be excluded early on. For this problem, on the other hand, even the first solution is only found after more than 47 million steps which means I could never have found it by hand within my lifetime.
 
 ### 3{{< super "rd" >}} attempt: backward is faster
 
@@ -155,9 +155,9 @@ But taking also the fourth column of the table into account (for all numbers gre
 
 ![backtracking 14: 12 pairs](/images/blog/backtracking-algorithms/backtracking_14_12_pairs.png)
 
-Taking this effect of the current pairing on potential future pairings into account allows to stop and retrace much earler, i.e. cut off huge subtrees of the search tree which otherwise would have been traversed without any result.
+Taking this effect of the current pairing on potential future pairings into account allows to stop and retrace much earlier, i.e. cut off huge subtrees of the search tree which otherwise would have been traversed without any result.
 
-If this additional check is incorporated into the forward-running algorithm which before took more than an hour to run and executed 5.2 billion steps, the program reaches roughly the same execution time as the backward-running algorithm (around 2 minutes) and uses less than 2 million steps! The number of steps is massively smaller even than for the backward-running algorithm (which needs 112 million steps) but unfortunately there is no further improvement on execution time as more checks have to be performed at every step. Performance-wise, the two effects seem to cancel each other out. Nevertheless, this final version of the algorithm is superior to the backward-running version because the optimization applied is more general, i.e. independant of the concrete problem and its tree structure. It will generally perform better also for other target sets like Fibonacci numbers or prime numbers. Of course, the different optimization strategies could all be combined, but as explained above, I had no interest in analysing specific optimizations for specific trees any further. 
+If this additional check is incorporated into the forward-running algorithm which before took almost an hour to run and executed 5.2 billion steps, the program reaches roughly the same execution time as the backward-running algorithm (around 2 minutes) and uses less than 2 million steps! The number of steps is massively smaller even than for the backward-running algorithm (which needs 112 million steps) but unfortunately there is no further improvement on execution time as more checks have to be performed at every step. Performance-wise, the two effects seem to cancel each other out. Nevertheless, this final version of the algorithm is superior to the backward-running version because the optimization applied is more general, i.e. independent of the concrete problem and its tree structure. It will generally perform better also for other target sets like Fibonacci numbers or prime numbers. Of course, the different optimization strategies could all be combined, but as explained above, I had no interest in analysing specific optimizations for specific trees any further. 
 
 As promised, I will now show and explain the full program in its final version:
 
@@ -225,7 +225,7 @@ def solve(pos):
         # not yet taken
         all_future_pos_reachable = True
 
-        # for every future postition, try to prove assumption wrong 
+        # for every future position, try to prove assumption wrong 
         for p in range(pos+1, N+1):
           if not pos_taken[p-1]:
                       
@@ -326,7 +326,7 @@ The program file can be found [here](/files/blog/backtracking-algorithms/Rainbow
 
 ## The analogy
 
-I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this post? I do not only find this drawing very beautiful, but also the algorithm which allowed me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example [this one](https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif) for the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
+I like backtracking algorithms for several reasons. Remember the drawing of the Rainbow Squares Circle which got me started with this article? I do not only find this drawing very beautiful, but also the algorithm which allowed me to find the solutions to this puzzle. I find the concept of backtracking very elegant. I like to watch animations of backtracking algorithms like for example [this one](https://commons.wikimedia.org/wiki/File:Eight-queens-animation.gif) for the [Eight Queens Puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 
 Backtracking algorithms in their efficiency also remind me a lot of the agile way of working: experiment, inspect and adapt: try something, measure its effect, and if it does not work, then try something else. But do it systematically and empirically.
 
