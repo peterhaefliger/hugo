@@ -1,6 +1,6 @@
 ---
 title: "Backtracking algorithms: experiment, inspect and adapt"
-date: 2024-02-28
+date: 2024-02-29
 draft: false
 ---
 
