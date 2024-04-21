@@ -12,14 +12,14 @@ _So the first thing to invest into for a conference talk is the slides: They sho
 
 _The full PDF slide deck can be found [here](/files/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk.pdf)._
 
-_The [ignite](https://en.wikipedia.org/wiki/Ignite_(event)) format is quite special: The speaker hands in 20 slides which are auto-advanced every 15 seconds, 5 minutes in total. During the talk, the speaker has no control over their slides; they just advance every 15 seconds. Which probably makes free speaking a bad idea because the talk might fall behind or run ahead of the slides._
+_The [ignite](https://en.wikipedia.org/wiki/Ignite_(event)) format is quite special: The speaker hands in 20 slides which are auto-advanced every 15 seconds, 5 minutes in total. During the talk, the speaker has no control over their slides; they just advance every 15 seconds. That probably makes free speaking a bad idea because the talk might fall behind or run ahead of the slides._
 
 _Good timing must be practiced:_
 * _when some words are hard to pronounce or twist your tongue --> find alternatives_
 * _when a slide always advances too fast --> shorten the text or split the slide into two_
 * _when you always have to wait for a slide to advance --> merge two slides into one_
 
-_I would assume that slam poets work similarly. If you love language, rhythm and flow, the preparation process is a lot of fun. I had the priviledge of work colleagues who supported me with their feedback. And that's the result:_
+_I would assume that slam poets work similarly. If you love language, rhythm and flow, the preparation process is a lot of fun. I had the privilege of work colleagues who supported me with their feedback. And that's the result:_
 
 My topic today is "wholesome talk - language patterns for feedback and learning".
 
