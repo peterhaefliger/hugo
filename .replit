@@ -2,5 +2,9 @@ run = "hugo && miniserve public --index index.html"
 # run = "hugo"
 entrypoint = "content/posts/hello.md"
 
+[[ports]]
+localPort = 8080
+externalPort = 80
+
 # [hosting]
 # directory = "/public"

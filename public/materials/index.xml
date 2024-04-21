@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Materials on don&#39;t just talk agile - walk agile!</title>
+    <link>https://walkagile.com/materials/</link>
+    <description>Recent content in Materials on don&#39;t just talk agile - walk agile!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Peter Häfliger</copyright>
+    <lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/materials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Table of pairs whose sum is one of the given square numbers</title>
+      <link>https://walkagile.com/materials/blog/backtracking-algorithms/table-pairs/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/materials/blog/backtracking-algorithms/table-pairs/</guid>
+      <description>The following table lists all 93 pairs which can be formed with the numbers from 1 to 60 whose sum is an element of the set {9, 36, 49, 64, 81}:
+ The first column lists the numbers i from 1 to 60. The second column lists all the numbers greater than i with which i can be paired. That&amp;rsquo;s the column used by the first (slow) version of the python program.</description>
+    </item>
+    
+  </channel>
+</rss>
