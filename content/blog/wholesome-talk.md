@@ -6,7 +6,7 @@ draft: false
 
 _The following is a transcript of my ignite talk given at the [DevOpsDays Zurich 2024](https://www.devopsdays.ch/) earlier this week. Well, at least it is the transcript of what I_ wanted _to say and_ think _I've said. I am not 100% sure because I was quite nervous. I will check once the organizers have published the video of the talk, and I will then also add the link to the video._
 
-_I had never spoken at any conference before. As a product owner and former scrum master, I am used to facilitating events with my team or presenting to customers. In such informal settings, the speaker usually speaks freely and abuses the slides as notes to remember what they want to say. That's why most such slides contain much too much text. In the extreme case, they contain the full speech and would rather just be sent out for reading instead of being read to the audience._
+_I had never spoken at any conference before. As a product owner and former scrum master, I am used to facilitating events with my team or presenting to customers. In such informal settings, the speaker usually speaks freely and abuses the slides as notes to remember what they want to say. That's why most such slides contain much too much text. In the extreme case, they contain the full speech and would better just be sent out for everyone to read by themself instead of being read aloud to the gathered audience._
 
 _So the first thing to invest in for a conference talk is the slides: They should only contain the main message points and visual elements to support the message, lighten the mood or entertain the audience. They should not distract the audience from what the speaker is saying. The listener should not have to constantly decide whether they want to read or listen. When I handed in my slides, I thought I had stripped them down to the minimum. Looking at them today, I would greatly reduce the text even further._
 
@@ -41,7 +41,7 @@ But there is one important precondition for this to work: Leaders have to care a
 
 Some leaders don't want any feedback because they are so convinced of their own genius.
 
-They are not curios.
+They are not curious.
 
 They don't want to learn.
 
