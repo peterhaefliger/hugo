@@ -123,7 +123,7 @@ If you don't want your curiosity to be mistaken for criticism, ask "what?" quest
 
 ![15. slide 15](/images/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk_pg15.png)
 
-Finally, studies have shown that if you praise a child for being good at something, they will choose a simpler task next to get praised for bing good again.
+Finally, studies have shown that if you praise a child for being good at something, they will choose a simpler task next to get praised again for being good.
 
 ![16. slide 16](/images/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk_pg16.png)
 
