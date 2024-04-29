@@ -28,7 +28,7 @@ I have created this blog as a repository of thoughts and ideas written down for 
 
 As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics, mathematical and algorithmic puzzles, languages, literature and music, running, breathing and stretching.
 
-In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but then did not pursue fiction writing any further. The decision two years later to create this blog and share some of my more technical writing may well be an afterglow of that creative writing spark.
+In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. The decision two years later to create this blog and share some of my more technical writing may well have been taken in an afterglow of that creative writing spark.
 
 All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
 
