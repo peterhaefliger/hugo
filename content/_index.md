@@ -30,7 +30,7 @@ As a former scrum master and current product owner, I have great interest in agi
 
 In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. The decision two years later to create this blog and share some of my more technical writing may well have been taken in an afterglow of that creative writing spark.
 
-I benefit a lot from running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running(tm)](https://www.runwithconstanza.com/). As in agile and devops, it's all about alignment, sustainable rhythm and flow.
+My working days are mostly spent sitting, reading, writing and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running(tm)](https://www.runwithconstanza.com/). It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment, sustainable rhythm and flow.
 
 All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
 
