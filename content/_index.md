@@ -20,17 +20,19 @@ I hold the following [certificates from srum.org](https://www.scrum.org/user/628
 
 ![scrum certificates](/images/scrum_certificates.png)
 
-If you are interested in more details about my continuing education or my professional career, please see my profile on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/). 
+If you are interested in more details about my education or my professional career, please see my profile on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/). 
 
 ## About this blog
 
 I have created this blog as a repository of thoughts and ideas written down for later reference and discussion. Sometimes the act of writing it down already helps me structure a thought or shape an idea.
 
-As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics. That's why I like the holistic approach of the [DevOps community](https://www.devopsdays.ch/). Further interests include mathematical and algorithmic puzzles but also languages, literature and music.
+As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics. That's why I like the holistic approach of the [DevOps community](https://www.devopsdays.ch/). 
 
-In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. The decision two years later to create this blog and share some of my more technical writing may well have been taken in an afterglow of that creative writing spark.
+I am passionate about languages and literature. With German as my mother tongue and living in a German-speaking country but working in an international company and being married to a Brazilian wife, I move back and forth between German, English and Portuguese on a daily basis. I read a lot, not only about professional topics, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
 
-My working days are mostly spent sitting, reading, writing and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running(tm)](https://www.runwithconstanza.com/). It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment, sustainable rhythm and flow.
+In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. I came to the conclusion that I am a reader, not a writer. At least not a fiction writer. Maybe a bit of a technical writer / essayist. Let's see in what direction this blog eventually develops.
+
+My working days are mostly spent sitting, reading, writing, thinking and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running](https://www.runwithconstanza.com/). It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment, sustainable rhythm and flow.
 
 All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
 
