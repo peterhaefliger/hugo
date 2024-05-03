@@ -4,7 +4,7 @@ date: 2023-03-30
 draft: false
 ---
 
-This first post is an updated version of an article which I have written in January 2021 for an older blog of mine which I have since discontinued. It was the time when we had to prepare our first distributed/online retrospectives during the Corona lockdown. It describes my experience with [Fun Retrospectives](https://www.funretrospectives.com/), a book, website and very helpful online retro tool.
+_This first post is an updated version of an article which I have written in January 2021 for an older blog of mine which I have since discontinued. It was the time when we had to prepare our first distributed/online retrospectives during the Corona lockdown. It describes my experience with [Fun Retrospectives](https://www.funretrospectives.com/), a book, website and very helpful online retro tool._
 
 ## Introduction
 
