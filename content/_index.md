@@ -28,6 +28,8 @@ I have created this blog as a repository of thoughts and ideas written down for 
 
 All views expressed are my personal opinion and I do take the liberty to update posts as I learn more.
 
+## Topics and interests
+
 As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics. That's why I like the holistic approach of the [DevOps community](https://www.devopsdays.ch/). 
 
 I am passionate about languages and literature. With German as my mother tongue and living in a German-speaking country but working in an international company and being married to a Brazilian wife, I move back and forth between German, English and Portuguese on a daily basis. I read a lot, not only about professional topics, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
@@ -36,11 +38,11 @@ In the summer of 2021, I took a [fiction writing class](https://wp.writingclasse
 
 My working days are mostly spent sitting, reading, writing, thinking and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running](https://www.runwithconstanza.com/) which incorporates the principles of [Tai Chi](https://en.wikipedia.org/wiki/Tai_chi) into running. It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment (of your feet, legs, upper body, arms and head), (body) sensing and adaptation, sustainable rhythm and flow.
 
-## About the tools and technologies used 
+## Tools and technologies used 
 
 This site is created with [HUGO](https://gohugo.io/), an open-source static site generator. I run it in [replit](https://replit.com) which allows me to edit my files from any machine without local installation. Using HUGO allows me to exclusively focus on content written in [markdown](https://www.markdownguide.org/getting-started/) and not worry about formatting or styling. I use [github](https://github.com) for back-up and version control and [netlify](https://netlify.com) for building, deploying and hosting the site. I use [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme because I like its elegant simplicity and the author's design philosophy as explained [here](https://clente.github.io/hugo-bearcub/) and [here](https://lente.dev/en/posts/stone-websites/).
 
-## About the pilgrim icon and avatar
+## The pilgrim icon and avatar
 
 Some years ago when I needed to choose an avatar for a JIRA profile, I first thought of the usual characters with which we try to identify ourselves as developers, like the ninja or the samurai. But then I remembered the [scrum guide](https://scrumguides.org/) and started reflecting on the scrum values of commitment, courage, focus, openness and respect, and suddenly a very different character came to my mind: the pilgrim.
 
