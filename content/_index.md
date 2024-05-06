@@ -38,7 +38,7 @@ In the summer of 2021, I took a [fiction writing class](https://wp.writingclasse
 
 My working days are mostly spent sitting, reading, writing, thinking and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running](https://www.runwithconstanza.com/) which incorporates the principles of [Tai Chi](https://en.wikipedia.org/wiki/Tai_chi) into running. It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment (of your feet, legs, upper body, arms and head), (body) sensing and adaptation, sustainable rhythm and flow.
 
-## Tools and technologies used 
+## Tools and technologies
 
 This site is created with [HUGO](https://gohugo.io/), an open-source static site generator. I run it in [replit](https://replit.com) which allows me to edit my files from any machine without local installation. Using HUGO allows me to exclusively focus on content written in [markdown](https://www.markdownguide.org/getting-started/) and not worry about formatting or styling. I use [github](https://github.com) for back-up and version control and [netlify](https://netlify.com) for building, deploying and hosting the site. I use [Caio Lente's](https://lente.dev/en/) [Bear Cub](https://themes.gohugo.io/themes/hugo-bearcub/) theme because I like its elegant simplicity and the author's design philosophy as explained [here](https://clente.github.io/hugo-bearcub/) and [here](https://lente.dev/en/posts/stone-websites/).
 
