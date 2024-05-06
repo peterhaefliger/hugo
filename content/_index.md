@@ -30,13 +30,13 @@ All views expressed are my personal opinion and I do take the liberty to update 
 
 ## Topics and interests
 
-As a former scrum master and current product owner, I have great interest in agile practices but also in more technical software engineering and programming topics. That's why I like the holistic approach of the [DevOps community](https://www.devopsdays.ch/). 
+As a former scrum master and current product owner, I have great interest in **agile practices** but also in more technical **software engineering** and **programming** topics. That's why I like the holistic approach of the [DevOps community](https://www.devopsdays.ch/). 
 
-I am passionate about languages and literature. With German as my mother tongue and living in a German-speaking country but working in an international company and being married to a Brazilian wife, I move back and forth between German, English and Portuguese on a daily basis. I read a lot, not only about professional topics, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
+I am passionate about **languages** and **literature**. With German as my mother tongue and living in a German-speaking country but working in an international company and married to a Brazilian wife, I move back and forth between **German**, **English** and **Portuguese** on a daily basis. I read a lot, not only agile and technical literature, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
 
 In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. I came to the conclusion that I am a reader, not a writer. At least not a fiction writer. Maybe a bit of a technical writer / essayist. Let's see in what direction this blog eventually develops.
 
-My working days are mostly spent sitting, reading, writing, thinking and discussing ideas. I try to balance this with running, conscious breathing and stretching. Again, for its holistic approach, I like the concept of [chi running](https://www.runwithconstanza.com/) which incorporates the principles of [Tai Chi](https://en.wikipedia.org/wiki/Tai_chi) into running. It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment (of your feet, legs, upper body, arms and head), (body) sensing and adaptation, sustainable rhythm and flow.
+My working days are mostly spent sitting, reading, writing, thinking and discussing ideas. I try to balance this with **running**, conscious **breathing** and **stretching**. Again, for its holistic approach, I like the concept of [chi running](https://www.runwithconstanza.com/) which incorporates the principles of [Tai Chi](https://en.wikipedia.org/wiki/Tai_chi) into running. It provides a lot of inspiration for my daily work as well. As in agile and devops, it's all about alignment (of feet, legs, upper body, arms and head), sensing (of body signals) and adaptation (of posture and running form), sustainable rhythm and flow.
 
 ## Tools and technologies
 
