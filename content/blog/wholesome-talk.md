@@ -6,6 +6,8 @@ draft: false
 
 _This article is about the ignite talk which I have given at the [DevOpsDays Zurich 2024](https://www.devopsdays.ch/) earlier this week._
 
+![1. picture 1](/images/blog/wholesome-talk/speaking.jpg)
+
 _I had never spoken at any conference before. As a product owner and former scrum master, I am used to facilitating events with my team or presenting to customers. In such informal settings, the speaker usually speaks freely and abuses the slides as notes to remember what they want to say. That's why most such slides contain much too much text. In the extreme case, they contain the full speech and would better just be sent out for everyone to read by themself instead of being read aloud to the gathered audience._
 
 _So the first thing to invest in for a conference talk is the slides: They should only contain the main message points and visual elements to support the message, lighten the mood or entertain the audience. They should not distract the audience from what the speaker is saying. The listener should not have to constantly decide whether they want to read or listen. When I handed in my slides, I thought that I had stripped them down to the minimum. Looking at them today, I would greatly reduce the text even further._
@@ -22,8 +24,6 @@ _Good timing must be practiced:_
 _I would assume that slam poets work similarly. If you love language, rhythm and flow, the preparation process is a lot of fun. I had the privilege of work colleagues who supported me with their feedback._
 
 _But even with all that thorough preparation, with the perfect instructions we got from the organizers on where to stand on the stage and how to hold the microphone and with the awesome introduction by Dirk, the master of ceremonies, I was quite nervous when I finally entered the stage. I appeared very calm to the audience (you can check out the video recording [here](https://vimeo.com/942923466)), but believe me: I wasn't._ 
-
-![1. picture 1](/images/blog/wholesome-talk/speaking.jpg)
 
 _And here's the full transcript of the talk:_
 
