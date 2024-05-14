@@ -2,6 +2,7 @@
 title: "wholesome talk - language patterns for feedback and learning"
 date: 2024-04-21
 draft: false
+tags: ["devops", "culture"]
 ---
 
 _This article is about the ignite talk which I have given at the [DevOpsDays Zurich 2024](https://www.devopsdays.ch/) earlier this week._

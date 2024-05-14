@@ -2,6 +2,7 @@
 title: "More Fun with Retrospectives: Check your rearview mirror!"
 date: 2023-12-15
 draft: false
+tags: ["retro"]
 ---
 
 _This is the translation of [my blog post written in German](https://blog.hslu.ch/informatik-wb/2023/11/08/voll-retro/) as an assignment for the [CAS DevOps Leadership and Agile Methods](https://www.hslu.ch/en/lucerne-school-of-information-technology/continuing-education/technologies-and-methods/cas-devops-and-cloud-transformation/) which I am currently doing at the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). The translation is rather free, as self-translations usually are, because the author can allow themself full liberties. But let me first explain the context of the course assignment:_
