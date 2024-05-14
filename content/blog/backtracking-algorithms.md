@@ -2,7 +2,7 @@
 title: "Backtracking algorithms: experiment, inspect and adapt"
 date: 2024-02-29
 draft: false
-tags: ["programming"]
+tags: ["programming", "swe"]
 ---
 
 In this article I tell the story of a beautiful **picture** which represents an interesting mathematical **problem** whose algorithmic **solution** has some **analogy** to the agile way of solving problems and making progress.

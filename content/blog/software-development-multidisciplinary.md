@@ -2,7 +2,7 @@
 title: "Software Development as a multidisciplinary endeavor"
 date: 2023-04-04
 draft: false
-tags: ["culture"]
+tags: ["swe", "culture"]
 ---
 
 Last summer I came across an advertisement for a teaching assignment at a swiss university for a module called "Software Engineering Basics". I applied and was even invited to an interview, but eventually they chose another candidate with a track record in education. But even if not successful, the application process proved to be a valuable opportunity for learning and self-reflection. When I applied, I knew of course that I lacked the teaching background, but more importantly, I had to ask myself whether I had the necessary domain expertise.
