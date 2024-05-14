@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://walkagile.com/sitemap.xml

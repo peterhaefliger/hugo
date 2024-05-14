@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on don&#39;t just talk agile - walk agile!</title>
+    <link>https://walkagile.com/tags/</link>
+    <description>Recent content in Tags on don&#39;t just talk agile - walk agile!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Peter Häfliger</copyright>
+    <lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>culture</title>
+      <link>https://walkagile.com/tags/culture/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/tags/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://walkagile.com/tags/devops/</link>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://walkagile.com/tags/programming/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swe</title>
+      <link>https://walkagile.com/tags/swe/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/tags/swe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agilepractices</title>
+      <link>https://walkagile.com/tags/agilepractices/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/tags/agilepractices/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
