@@ -32,7 +32,7 @@ All views expressed are my personal opinion and I do take the liberty to update 
 
 ## Topics and interests
 
-As a former scrum master and current product owner, I have great interest in [#agilepractices](/tags/agilepractices) but also in more technical [#programming](/tags/programming) and [#swe](/tags/swe) topics as well as more general software development [#culture](/tags/culture). That's why I like the holistic approach of [#devops](/tags/devops).
+As a former scrum master and current product owner, I have great interest in [#agilepractices](/tags/agilepractices) and software development [#culture](/tags/culture) but also in more technical [#programming](/tags/programming) and [#swe](/tags/swe) topics. That's why I like the holistic approach of [#devops](/tags/devops).
 
 I am passionate about [#language](/tags/language)(s) and **literature**. With German mother tongue and living in a German-speaking country but working in an international company and married to a Brazilian wife, I move back and forth between **German**, **English** and **Portuguese** on a daily basis. I read a lot, not only agile and technical literature, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
 
