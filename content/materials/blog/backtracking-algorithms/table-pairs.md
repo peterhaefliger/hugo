@@ -1,6 +1,6 @@
 ---
 title: "Table of pairs whose sum is one of the given square numbers"
-date: 2023-04-07
+date: 2024-02-29
 draft: false
 ---
 

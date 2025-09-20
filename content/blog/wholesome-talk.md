@@ -98,7 +98,7 @@ There is other mistakes you should avoid, for example the Seven Sins of Question
 
 The problem with binary questions is that they force a 55% yes into a 100% yes, and they put the full responsibility onto the receiver of the question.
 
-And if then anything goes wrong: "Well, it was _you_ who said it was safe!""
+And if then anything goes wrong: "Well, it was _you_ who said it was safe!"
 
 ![13. slide 12](/images/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk_pg12.png)
 
