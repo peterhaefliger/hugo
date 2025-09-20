@@ -5,7 +5,7 @@ draft: false
 tags: ["devops", "culture", "language"]
 ---
 
-_This article is about the ignite talk which I have given at the [DevOpsDays Vilnius 2025](https://www.devopsdays.lt/) last week._
+_This is a transcript of the ignite talk which I have given at the [DevOpsDays Vilnius 2025](https://www.devopsdays.lt/) last week._
 
 ![1. picture 1](/images/blog/linguistic-silos/presenting_2.jpg)
 
@@ -15,7 +15,7 @@ _I had a great two days at this event which was perfectly organized. Kudos to th
 
 ![2. picture 2](/images/blog/linguistic-silos/pac_man_rule.jpg)
 
-_The name tags also had a "handle" (or rather an instruction on how the person wanted to be handled?) where we all could choose one of three stickers:_
+_The name tags also had a "handle" (or rather an instruction on how the person wanted to be handled?) for which one could choose from three stickers:_
 
 * _Come talk to me (I might be too shy to talk to you first)_
 * _I will talk to you if I want to talk (otherwise please do not talk to me)_
@@ -23,7 +23,9 @@ _The name tags also had a "handle" (or rather an instruction on how the person w
 
 ![3. picture 3](/images/blog/linguistic-silos/name_tag.jpg)
 
-_But now to the transcript of the talk:_
+_You immediately know what you're at with anybody you encounter :-) Expectations well managed!_
+
+_But now to the transcript of my talk:_
 
 Laba diena. Mano vardas yra Peter. 
 
@@ -33,7 +35,7 @@ I love languages in general. That's why I talk about language.
 
 ![4. slide 1](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg01.png)
 
-Linguists distinguish between concepts and their labels or terms or names. 
+Linguists distinguish between "concepts" and their "labels" or "terms" or "names". 
 
 Obviously, different languages use different labels. And as the cover does not change a book, the label will not change a concept.
 
@@ -45,9 +47,9 @@ Because a house is still a house, even if you call it namas, and a rose by any o
 
 On the other hand, using the same term for different concepts is already more confusing. 
 
-But when languages use different concepts, it gets really bad.
-
 ![7. slide 4](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg04.png)
+
+But when languages use different concepts, it gets really bad.
 
 I am from Switzerland. We have 4 official national languages. 3 of them we share with our neighbours Germany, France and Italy. 
 
@@ -74,7 +76,7 @@ What's the problem here? The problem is that while for a Frenchman "dîner" is t
 
 And English is not much better! 
 
-According to Wikipedia, Dinner is a meal _of any size_ eaten _at any time of the day_! And the meaning as the evening meal is only _becoming_ standard in _most_ places.
+According to Wikipedia, dinner is a meal _of any size_ eaten _at any time of the day_! And the meaning as the evening meal is only _becoming_ standard in _most_ places.
 
 ![12. slide 9](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg09.png)
 
@@ -94,19 +96,19 @@ What's going on here? Is Olha using the queen's plural on herself? Is she such a
 
 ![14. slide 11](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg11.png)
 
-Well, no, because in Slavic languages there is the "inclusive we". A very nice concept which we lack in English o German.
+Well, no, because in Slavic languages there is the "inclusive we". A very nice concept which we lack in English or German.
 
 ![15. slide 12](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg12.png)
 
 Then there is the gender of the sun. 
 
-In German it's female, in Italian male. Maybe because in Germany, people used to long for sweet warmth after a long cold winter, while in Italy they always knew the destructive force of the hot sun.
+In German it's female, in Italian male. Maybe because in Germany, people used to long for some sweet _warmth_ after a long cold winter, while in Italy they always knew the destructive force of _the_ hot sun.
 
 ![16. slide 13](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg13.png)
 
 Experience and culture shape langage. 
 
-And research done by linguists like [Lera Boroditsky](http://lera.ucsd.edu/) shows that this also works the other way: Language shapes the mental model and even the perception of the world.
+And research done by linguists like [Lera Boroditsky](http://lera.ucsd.edu/) shows that this also works the other way round: Language shapes the mental model and even the perception of the world.
 
 ![17. slide 14](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg14.png)
 
@@ -138,7 +140,7 @@ Time's up already! Thank you for listening! You're allowed to talk to me afterwa
 
 _(pointing at my name tag with the "Come talk to me" sticker)_
 
-If you do it in Lithuanian, please keep it slow and easy!
+And if you do it in Lithuanian, please keep it slow and easy!
 
 ![23. slide 20](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg20.png)
 
