@@ -1,5 +1,5 @@
 ---
-title: "don't just say the same, mean the same - on linguistic silos"
+title: "don't just say the same, mean the same - how to overcome linguistic silos"
 date: 2025-09-20
 draft: false
 tags: ["devops", "culture", "language"]
@@ -102,7 +102,7 @@ Well, no, because in Slavic languages there is the "inclusive we". A very nice c
 
 Then there is the gender of the sun. 
 
-In German it's female, in Italian male. Maybe because in Germany, people used to long for some sweet _warmth_ after a long cold winter, while in Italy they always knew the destructive force of _the_ hot sun.
+In German it's female, in Italian male. Maybe because in Germany, people used to long for some sweet _warmth_ after a long cold winter, while in Italy they always knew the destructive force of the _hot_ sun.
 
 ![16. slide 13](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg13.png)
 
@@ -132,7 +132,7 @@ We need to accept and embrace diversity and recoginize our own hidden assumption
 
 ![21. slide 18](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg18.png)
 
-And we need to formulate explicit requirements, define terms, challenge terms, maybe even create our own team termns and metaphors. 
+And we need to formulate explicit requirements, define terms, challenge terms, maybe even create our own team terms and metaphors. 
 
 ![22. slide 19](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg19.png)
 
@@ -140,7 +140,7 @@ Time's up already! Thank you for listening! You're allowed to talk to me afterwa
 
 _(pointing at my name tag with the "Come talk to me" sticker)_
 
-And if you do it in Lithuanian, please keep it slow and easy!
+And if you do it in Lithuanian, please keep it slow and easy! Ačiū!
 
 ![23. slide 20](/images/blog/linguistic-silos/dodvilnius2025_ignite_peterhaefliger_linguisticsilos_pg20.png)
 
