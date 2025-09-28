@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>literature on don&#39;t just talk agile - walk agile!</title>
+    <link>https://walkagile.com/tags/literature/</link>
+    <description>Recent content in literature on don&#39;t just talk agile - walk agile!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Peter Häfliger</copyright>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/tags/literature/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Lithuania with Love - Part 2</title>
+      <link>https://walkagile.com/blog/from-lithuania-with-love-part-2/</link>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/blog/from-lithuania-with-love-part-2/</guid>
+      <description>This is the second part of of an article about my first trip to Lithuania earlier this month. The first part can be found here.
+Day 5: Museum of Occupations and Freedom Fights and Stotis District Walk Friday, September 12th
+I love the bakeries in Lithuania! What could be better than starting a day like this:
+As the day was rather rainy, I dedided to go to a museum. Vilnius has a broad range of museums for art, history, technology etc.</description>
+    </item>
+    
+    <item>
+      <title>From Lithuania with Love - Part 1</title>
+      <link>https://walkagile.com/blog/from-lithuania-with-love-part-1/</link>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/blog/from-lithuania-with-love-part-1/</guid>
+      <description>I am not usually a travel blogger, but colleagues keep looking at me with surprise and asking me why I took a week of leave from work and a trip to Vilnius just to deliver a five-minutes talk at the local DevOpsDays. While this sounds a bit crazy indeed, there is of course a lot more to Lithuania than just the devops community. This is the first part of an article in which I try to paint the bigger picture.</description>
+    </item>
+    
+  </channel>
+</rss>

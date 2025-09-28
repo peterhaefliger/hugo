@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Peter Häfliger</copyright>
-    <lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>don&#39;t just say the same, mean the same - how to overcome linguistic silos</title>
+      <link>https://walkagile.com/blog/linguistic-silos/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://walkagile.com/blog/linguistic-silos/</guid>
+      <description>This is a transcript of the ignite talk which I have given at the DevOpsDays Vilnius 2025 last week.
+If you don&amp;rsquo;t know what an ignite talk is, you might want to check out my previous article about my first such talk given at the DevOpsDays Zürich last year where I explain the format and how to best prepare for it.
+I had a great two days at this event which was perfectly organized.</description>
+    </item>
+    
     <item>
       <title>wholesome talk - language patterns for feedback and learning</title>
       <link>https://walkagile.com/blog/wholesome-talk/</link>

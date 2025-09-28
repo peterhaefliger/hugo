@@ -55,7 +55,7 @@ There are similar prime directives for futurespectives and team building meeting
 
 Choose a first activity to break the ice and get the participants engaged. At the time of this writing, three activities are available: [Guess who likes it](https://www.funretrospectives.com/guess-my-favorite-song/), [The roulette asks](https://www.funretrospectives.com/the-roulette-asks/) and [Fun Fact](https://www.funretrospectives.com/fun-fact/). Alternatively, a custom table can be created or the activity can be skipped by choosing "None". We’ll choose “Guess who likes it” in the example and then click the **NEXT** button again:
 
-![3. prime directive](/images/blog/funretrospectives/3_energizer.png)
+![3. energizer](/images/blog/funretrospectives/3_energizer.png)
 
 ### 4. Check-in
 

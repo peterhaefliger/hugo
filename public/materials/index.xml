@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Peter Häfliger</copyright>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/materials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>don&#39;t just walk agile - run agile!</title>
-      <link>https://walkagile.com/materials/table-races/</link>
-      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://walkagile.com/materials/table-races/</guid>
-      <description>The following tables list all the races I have done since I started running in 2012:
-Marathons (and Ultras)    Nr Race distance (km) time [hh:mm:ss] remarks     1 München Marathon 42.195 04:06:21 First marathon: Bad preparation (good half marathon shape but no longer jogs), even worse strategy (feeling too confident and running the first half too fast) and very hot weather resulted in being completely spent after about 34 km and having to more or less walk the last 8 km.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 29 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://walkagile.com/materials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Table of pairs whose sum is one of the given square numbers</title>
       <link>https://walkagile.com/materials/blog/backtracking-algorithms/table-pairs/</link>
