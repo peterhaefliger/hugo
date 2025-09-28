@@ -91,7 +91,7 @@ And, as in Vilnius, there is a lot of street art:
 
 _Sunday, September 14th_
 
-I am a reborn Christian and like to attend worship service most Sundays at [Buchegg Church](https://www.buchegg.church/en/) in Zürich. When I am abroad on a Sunday, I usually check whether there is an evangelic church where I could worship. I was lucky to find that there is one such church in Vilnius just a 20 minutes' walk from my hotel to the north, north of the Šnipiškės skyscrapter district:
+I am a reborn Christian and like to attend worship service most Sundays at [Buchegg Church](https://www.buchegg.church/en/) in Zürich. When I am abroad on a Sunday, I usually check whether there is an evangelic church where I could worship. I was lucky to find that there is such a church in Vilnius just a 20 minutes' walk from my hotel to the north, north of the Šnipiškės skyscrapter district:
 
 ![Life Church 1](/images/blog/from-lithuania-with-love/day_7_sunday_1.jpg)
 
@@ -103,11 +103,11 @@ It's called [Life Church](https://gyvenimobaznycia.lt/) and located at Kalvarij�
 
 ![Life Church 3](/images/blog/from-lithuania-with-love/day_7_sunday_3.jpg)
 
-I was glad that I could finish this rich and happy week of travel with an inspiring message from Pastor Tony Miller ("Seed, Time and Harvest") ... 
+I was glad that I could finish this rich and happy week of travel with an inspiring message from Pastor Tony Miller ("Seed, Time, and Harvest") ... 
 
 ![Life Church 4](/images/blog/from-lithuania-with-love/day_7_sunday_4.jpg)
 
-... and the beautiful music form their worship band:
+... and the worship led by their wonderful band:
 
 ![Life Church 5](/images/blog/from-lithuania-with-love/day_7_sunday_5.jpg)
 
@@ -140,7 +140,7 @@ In a large city like Vilnius, you can of course get food from almost any place i
 
 There are the usual fastfood places like Mc Donald's or Kentucky Fried Chicken if you have no time for a real mal (for example when you're in a hurry between an old town walk, a balloon flight and the finishing of your presentation slides). There is also a burger place called Hesburger, apparently a Finnish group common in Finland and the baltic states but unknown elsewhere.
 
-I tried it all, from Hesburger to "Lucky Bagel" at Kalvarijų gatvė 85 and from the food stands at Halės market to real restaurants like [One for All](https://www.restoranasoneforall.lt/) in Užupis or [Lokys](https://lokys.lt/) in the old town.
+I tried it all, from Hesburger to "Lucky Bagel" at Kalvarijų gatvė 55 and from the food stands at Halės market to real restaurants like [One for All](https://www.restoranasoneforall.lt/) in Užupis or [Lokys](https://lokys.lt/) in the old town.
 
 Vilnius also sports several award-winning fine dining places. The DevOpsDays organizers treated us to an exclusive speakers' dinner after the first day of the conference. They took us to [Džiaugsmas](https://www.dziaugsmas.com/) where every dish is a composition of tastes and textures:
 
@@ -152,7 +152,7 @@ Vilnius also sports several award-winning fine dining places. The DevOpsDays org
 
 I do not usually go to places like this. But that's the beauty of travelling, isn't it: doing things which you would not usually do, taking in new sights, sounds, smells and tastes, expanding your horizon.
 
-I usually like it simpler. Food that can be enjoyed without the composer's explanation. I therefore loved the follwing two of the country's specialties:
+I usually like it simpler. Food that can be enjoyed without the composer's explanation. I therefore loved the following two of the country's specialties:
 
 Cepelinai, a kind of potato dumplings:
 

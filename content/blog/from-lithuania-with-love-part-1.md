@@ -67,7 +67,7 @@ There is only one direct flight from Zürich to Vilnius with Air Baltic in the m
 
 I stayed at the Courtyard by Marriot Vilnius City Center hotel on Rinktinės Street, a clean and quiet business hotel with friendly and very supportive staff. It's a great location just a ten minutes' walk from the old town, north of the Neris river across Karaliaus Mindaugo Tiltas (King Mindaugas Bridge). Getting there from the airport turned out to be very easy: Bus 3G goes directly to Žaliasis Tiltas (Green Bridge) from where it is just an 800 m walk eastward to the hotel. Tickets can conveniently be paid by card inside the bus.
 
-As the weather was rather cloudy on that first evening and as I still had to polish the slides for my talk once more (yes, call me a perfectionist...), I just went for a quick dinner at some burger place and then back to the hotel to work.
+As the weather was rather cloudy on that first evening and as I still had to polish the slides for my talk once more (yes, call me a perfectionist ...), I just went for a quick dinner at some burger place and then back to the hotel to work.
 
 ## Day 2: Old Town Walk and Balloon Flight
 
@@ -99,7 +99,7 @@ In the afternoon I did a balloon flight. Hot air ballooning is very popular in V
 
 Flights take place around sunrise or sunset. The whole adventure takes about four hours: The crew pick all the passengers up at their hotel or apartment and take them to the launch site where the whole group (in our case six passengers, the pilot and two members of the ground crew) help unfolding and inflating the balloon. As soon as the nearby airport's flight security allows for take-off, the balloons (on that day a group of six from various providers) take off. The flight takes about one hour, and after landing the balloon needs to be deflated, folded and put back into the trailer before the flight can be celebrated with a glass of prosecco and the the passengers are all brought back to their hotel.
 
-Was I scared? I must admit that at the beginning I was. I did not expect to be but I was. Initially the balloon had to rise high very quickly. That scared me, even more so as I am rather tall and was suddenly (unnecessarily) afradid of toppling over and falling out of the basket. I bent my knees a bit to be lower, and I did not look straight down but only towards the horizon. But after some time I got used to it, and once we had flown over the TV Tower and out of the city, the pilot could go lower over the woods and I was able to enjoy it even more.
+Was I scared? I must admit that at the beginning I was. I did not expect to be but I was. Initially the balloon had to rise high very quickly. That scared me, even more so as I am rather tall and was suddenly (unnecessarily) afraid of toppling over and falling out of the basket. I bent my knees a bit to be lower, and I did not look straight down but only towards the horizon. But after some time I got used to it, and once we had flown over the TV Tower and out of the city, the pilot could go lower over the woods and I was able to enjoy it even more.
 
 It's a very beautiful, unique experience! No sound except for the occasional burning of the gas for rising further or just to prevent descending, no wind (as the balloon moves with the wind), just quiet peace in the beautful sunset. To share some of my impressions:
 
