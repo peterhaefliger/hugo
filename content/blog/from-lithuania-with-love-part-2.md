@@ -111,7 +111,7 @@ I was glad that I could finish this rich and happy week of travel with an inspir
 
 ![Life Church 5](/images/blog/from-lithuania-with-love/day_7_sunday_5.jpg)
 
-The whole service has been recorded and can be watched on [youtube](https://www.youtube.com/watch?v=6ei6pAujB5A). If nothing else, invest at least a few minutes and let yourself be touched by the band's beautiful rendering of "I trust in God" at 32:00:
+The whole service has been recorded and can be watched on [youtube](https://www.youtube.com/watch?v=6ei6pAujB5A). If nothing else, take at least a few minutes and let yourself be touched by the band's beautiful rendering of "I trust in God" at 32:00:
 
 _[I sought the Lord and He heard and He answered, that's why I trust Him!](https://www.youtube.com/live/6ei6pAujB5A?si=dYwpOgsZb6lOhmGe&t=1920)_
 
