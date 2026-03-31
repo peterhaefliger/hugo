@@ -16,9 +16,9 @@ My name is Peter Häfliger (sometimes spelt Haefliger when the dots are not avai
 
 I hold a Master’s Degree in [Computational Science and Engineering](https://rw.ethz.ch) from the [Swiss Federal Institute of Technology](https://ethz.ch) and a Certificate of Advanced Studies in [DevOps Leadership and Agile Methods](https://www.hslu.ch/en/lucerne-school-of-information-technology/continuing-education/technologies-and-methods/cas-devops-and-cloud-transformation/) from the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). I have been working in the software industry since 2001.
 
-Since 2008, I have been with [Avaloq](https://www.avaloq.com) (since 2020 part of [NEC](https://www.nec.com)), a leading financial technology and service provider, in various roles such as software developer, project manager, team lead, business analyst and scrum master. I currently serve as product owner of our Business Process Automation.
+Since 2008, I have been with [Avaloq](https://www.avaloq.com) (since 2020 part of [NEC](https://www.nec.com)), a leading financial technology and service provider, in various roles such as software developer, project manager, team lead, business analyst and scrum master. I currently serve as product owner of our Client Lifecycle Management (CLM) solutions.
 
-I hold the following [certificates from srum.org](https://www.scrum.org/user/628402):
+I hold the following [certificates from scrum.org](https://www.scrum.org/user/628402):
 
 ![scrum certificates](/images/scrum_certificates.png)
 
@@ -34,7 +34,9 @@ All views expressed are my personal opinion and I do take the liberty to update 
 
 As a former scrum master and current product owner, I have great interest in [#agilepractices](/tags/agilepractices) and software development [#culture](/tags/culture) but also in more technical [#programming](/tags/programming) and software engineering ([#swe](/tags/swe)) topics. That's why I like the holistic approach of [#devops](/tags/devops).
 
-I am passionate about [#language](/tags/language)(s) and [#literature](/tags/literature). With German mother tongue and living in a German-speaking country but working in an international company and married to a Brazilian wife, I move back and forth between **German**, **English** and **Portuguese** on a daily basis. I read a lot, not only agile and technical literature, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese. 
+I am passionate about [#language](/tags/language)(s) and [#literature](/tags/literature). With German mother tongue and living in a German-speaking country but working in an international company and married to a Brazilian wife, I move back and forth between **German**, **English** and **Portuguese** on a daily basis. I read a lot, not only agile and technical literature, but also novels and short stories, mostly in English but also in German and less frequently in Portuguese.
+
+In July 2025, I started learning Lithuanian. If you want to know how this came about, read my [two-part article](/blog/from-lithuania-with-love-part-1) on my first trip to Vilnius.
 
 In the summer of 2021, I took a [fiction writing class](https://wp.writingclasses.com/courses/fiction-writing-i/) with [Maria Alejandra Barrios Vélez](https://mariaalejandrabarriosvelez.com/) organized by the [Gotham Writers](https://www.writingclasses.com/) but did not pursue fiction writing any further after that. I came to the conclusion that I am a reader, not a writer. At least not a fiction writer. Maybe a bit of a technical writer / essayist. Let's see in what direction this blog eventually develops.
 

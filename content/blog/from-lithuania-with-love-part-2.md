@@ -136,7 +136,7 @@ My flight went at 4 in the afternoon. Vilnius airport has just been modernized a
 
 In a large city like Vilnius, you can of course get food from almost any place in the world. But when I am in Lithuania, I don't want to eat Japanese or German food. I did go to the very nice Portuguese restaurant [Galo do Porto](https://galodoporto.lt/), though, because on Saturday night when I came home from the exciting trip to Kaunas, I felt a bit tired and lonely and homesick for my wife's cooking. Brazilian cuisine has certain similarities to Portuguese cuisine, and the restaurant's "rabada" (oxtail stewed in red wine sauce) made me more than happy!
 
-There are the usual fastfood places like Mc Donald's or Kentucky Fried Chicken if you have no time for a real mal (for example when you're in a hurry between an old town walk, a balloon flight and the finishing of your presentation slides). There is also a burger place called Hesburger, apparently a Finnish group common in Finland and the baltic states but unknown elsewhere.
+There are the usual fastfood places like Mc Donald's or Kentucky Fried Chicken if you have no time for a real meal (for example when you're in a hurry between an old town walk, a balloon flight and the finishing of your presentation slides). There is also a burger place called Hesburger, apparently a Finnish group common in Finland and the baltic states but unknown elsewhere.
 
 I tried it all, from Hesburger to "Lucky Bagel" at Kalvarijų gatvė 55 and from the food stands at Halės market to real restaurants like [One for All](https://www.restoranasoneforall.lt/) in Užupis or [Lokys](https://lokys.lt/) in the old town.
 

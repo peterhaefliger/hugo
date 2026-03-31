@@ -15,7 +15,7 @@ I must admit that a year and a half ago, I did not even know which of the three 
 
 Being a language aficionado, this of course caught my interest...
 
-I started reading about Lithuanian and Lithuania. I plan to write a separate article about the language later this year. In these first two posts I want to focus on my first visit to the country. 
+I started reading about Lithuanian and Lithuania. I plan to write a separate article about the language later. In these first two posts I want to focus on my first visit to the country. 
 
 I had always been more oriented towards the west than the east. I had been a high school exchange student in the United States in 1991/92. While after my return to Switzerland I did have two years of Russian language classes in high school and even participated in a three-week exchange with a school in Barnaul in the West Siberian Altai region in 1995, my interest later turned west again: I first went to Portugal to learn Portuguese and then for an IAESTE internship to Brazil. And when I later got married to my Brazilian wife, family vacations were mainly spent in Switzerland, western Europe, Brazil and the United States. 
 
