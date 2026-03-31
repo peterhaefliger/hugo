@@ -67,6 +67,3 @@ enableRobotsTXT = true
   [social]
     email = "peterhaefliger@yahoo.com" # Added to the navbar so readers can reply to posts
     twitter = "walkagile" # Twitter handle (without '@')
-
-[build.environment]
-HUGO_VERSION = "0.145.0"
