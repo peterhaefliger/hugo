@@ -18,11 +18,26 @@ I hold a Master’s Degree in [Computational Science and Engineering](https://rw
 
 Since 2008, I have been with [Avaloq](https://www.avaloq.com) (since 2020 part of [NEC](https://www.nec.com)), a leading financial technology and service provider, in various roles such as software developer, project manager, team lead, business analyst and scrum master. I currently serve as product owner of our Client Lifecycle Management (CLM) solutions.
 
+
+<!--
 I hold the following [certificates from scrum.org](https://www.scrum.org/user/628402):
 
 ![scrum certificates](/images/scrum_certificates.png)
+-->
 
 If you are interested in more details about my education or my professional career, please see my profile on [linkedin](https://www.linkedin.com/in/peter-h%C3%A4fliger-89b107103/). 
+
+## How I understand the Product Owner (PO) role
+
+I love the Product Owner role because it allows me to combine all the technical, business, management and leadership skills acquired in my earlier roles of developer, business analyst, scrum master and team lead.
+
+> The Product Owner wants to build the right thing, the Development Team wants to build it right and the Scrum Master wants to build it fast. A great team knows how to balance these different interests.
+>
+> — <cite>Barry Overeem: [The Scrum Master as a Teacher](https://www.scrum.org/resources/blog/scrum-master-teacher)</cite>
+
+I have lived all three roles in this triangle but always felt that the PO role is the most important. Building the wrong thing right and fast creates no value. The Product Owner ensures that the team builds the right thing.
+
+For my understanding of software development, also see my [blog post](blog/software-development-multidisciplinary/) on software development as a multidisciplinary endeavor.
 
 ## About this blog
 
