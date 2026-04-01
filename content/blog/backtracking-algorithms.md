@@ -56,7 +56,7 @@ Maybe pushed a bit into this direction by Hansruedi's very mathematical problem 
 
 which is 2.200 x 10{{< super "24" >}}, i.e. 2.2 septillion, which is an enormous number (22 followed by 23 zeroes). 
 
-A web search led me to the [paper from the Mathematical Association of America( MAA)](https://www.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) from which the above picture must have been taken. I learned that the problem is called "rainbow squares" because of the way in which the pairs with equal sum are marked with the same color, or simply "rainbow pairs" for the more general case where the sums are subject to some constraint different from being square numbers (e.g. polynomials or Fibonacci numbers).
+A web search led me to the [paper from the Mathematical Association of America( MAA)](https://old.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) from which the above picture must have been taken. I learned that the problem is called "rainbow squares" because of the way in which the pairs with equal sum are marked with the same color, or simply "rainbow pairs" for the more general case where the sums are subject to some constraint different from being square numbers (e.g. polynomials or Fibonacci numbers).
 
 I also learned from this paper that the number of solutions for the numbers from 1 to 60 where the sum is constraint to be *any* square, i.e. {4, 9, 16, 25, 36, 49, 64, 81, 100} is 4,366,714! But how many solutions would there be with the narrower constraint set {9, 36, 49, 64, 81}? And how could they be found?
 
@@ -126,7 +126,7 @@ This first version worked exactly as shown in the figures above. It found 5294 s
 
 ### 3{{< super "rd" >}} attempt: backward is faster
 
-How could the algorithm for the rainbow squares be improved? I found a hint in the [AMM paper](https://www.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) mentioned above where for a simpler problem (numbers only from 1 to 18, not to 60) they ask whether it would be better to start with small pairs or large ones and answer that "The latter is in fact more efficient since it presents fewer choices early on." That the same holds for our problem with numbers from 1 to 60 can be seen in the [reference table](../../materials/blog/backtracking-algorithms/table-pairs): While the twelve smallest numbers can form three or even four pairs each, the twelve largest numbers can only form two pairs each.
+How could the algorithm for the rainbow squares be improved? I found a hint in the [AMM paper](https://old.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) mentioned above where for a simpler problem (numbers only from 1 to 18, not to 60) they ask whether it would be better to start with small pairs or large ones and answer that "The latter is in fact more efficient since it presents fewer choices early on." That the same holds for our problem with numbers from 1 to 60 can be seen in the [reference table](../../materials/blog/backtracking-algorithms/table-pairs): While the twelve smallest numbers can form three or even four pairs each, the twelve largest numbers can only form two pairs each.
 
 I changed the algorithm to run backwards from 60 to 1. Again, the program file can be found [here](/files/blog/backtracking-algorithms/Rainbow_Squares_backtracking_reversed.py) and its output file [here](/files/blog/backtracking-algorithms/Rainbow_Squares_Solutions_backtracking_reversed.txt). And again, I will not explain the program here; I will explain the final version at the end of this solution section.
 
@@ -136,7 +136,7 @@ Why does the direction in which the algorithm runs have such a massive effect? T
 
 ![backtracking as tree traversal](/images/blog/backtracking-algorithms/backtracking_tree_structure.png)
 
-Starting with the largest pairs yields a tree which is narrower but deeper as - with a bit of imagination - could already have been seen in the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Or as the [AMM paper](https://www.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) states: "... it presents fewer choices early on."
+Starting with the largest pairs yields a tree which is narrower but deeper as - with a bit of imagination - could already have been seen in the [reference table](../../materials/blog/backtracking-algorithms/table-pairs). Or as the [AMM paper](https://old.maa.org/sites/default/files/pdf/awards/college.math.j.46.4.264.pdf) states: "... it presents fewer choices early on."
 
 Another strategy which might be worth exploring is to run from 1 to 60 but for each number start with the highest-number pairing instead of the lowest one, i.e. pair 1 first with 48, 2 with 47, 3 with 46, 4 with 60 and so on. Thinking in terms of the tree, this means leaving the structure of the tree unchanged but exploring different branches first. I have not tried this.
 

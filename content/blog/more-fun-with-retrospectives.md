@@ -5,7 +5,7 @@ draft: false
 tags: ["agilepractices"]
 ---
 
-_This is the translation of [my blog post written in German](https://blog.hslu.ch/informatik-wb/2023/11/08/voll-retro/) as an assignment for the [CAS DevOps Leadership and Agile Methods](https://www.hslu.ch/en/lucerne-school-of-information-technology/continuing-education/technologies-and-methods/cas-devops-and-cloud-transformation/) which I am currently doing at the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). The translation is rather free, as self-translations usually are, because the author can allow themself full liberties. But let me first explain the context of the course assignment:_
+_This is the translation of [my blog post written in German](https://blog.hslu.ch/informatik-wb/2023/11/08/voll-retro/) as an assignment for the CAS DevOps Leadership and Agile Methods which I am currently doing at the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). The translation is rather free, as self-translations usually are, because the author can allow themself full liberties. But let me first explain the context of the course assignment:_
 
 _During the course, a colleague brought up the question of how shy team members can be encouraged to speak up in a retro. I answered that there are techniques  and tools like [Fun Retrospectives](https://www.funretrospectives.com/) which I had described in [my very first post on this blog](/blog/funretrospectives). The teacher then mentioned [Retromat](https://retromat.org/en/) and I decided to compare the two and give a general introduction to retrospectives in my blog post assignment._
 

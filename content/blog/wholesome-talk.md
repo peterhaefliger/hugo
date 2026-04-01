@@ -36,7 +36,7 @@ It's a special topic for me because usually I tell people that the _walk_ is mor
 
 ![3. slide 2](/images/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk_pg02.png)
 
-I recently came to understand that there is a different type of talk which actually enables and supports the walk. And the eye-opener was this book by [David Marquet](https://davidmarquet.com/): ["Leadership is Language"](https://davidmarquet.com/leadership-is-language-book/). David Marquet is better known for his first book ["Turn the Ship Around!"](https://davidmarquet.com/turn-the-ship-around-book/).
+I recently came to understand that there is a different type of talk which actually enables and supports the walk. And the eye-opener was this book by [David Marquet](https://davidmarquet.com/): ["Leadership is Language"](https://davidmarquet.com/books/leadership-is-language/). David Marquet is better known for his first book ["Turn the Ship Around!"](https://davidmarquet.com/turn-the-ship-around-book/).
 
 ![4. slide 3](/images/blog/wholesome-talk/dodzurich2024_ignite_peterhaefliger_wholesometalk_pg03.png)
 
