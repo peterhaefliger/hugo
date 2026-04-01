@@ -14,7 +14,7 @@ My name is Peter Häfliger (sometimes spelt Haefliger when the dots are not avai
 
 ![speaking at the DevOpsDays Zurich 2024](/images/speaking.jpg)
 
-I hold a Master’s Degree in [Computational Science and Engineering](https://rw.ethz.ch) from the [Swiss Federal Institute of Technology](https://ethz.ch) and a Certificate of Advanced Studies in [DevOps Leadership and Agile Methods](https://www.hslu.ch/en/lucerne-school-of-information-technology/continuing-education/technologies-and-methods/cas-devops-and-cloud-transformation/) from the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). I have been working in the software industry since 2001.
+I hold a Master’s Degree in [Computational Science and Engineering](https://rw.ethz.ch) from the [Swiss Federal Institute of Technology](https://ethz.ch) and a Certificate of Advanced Studies in DevOps Leadership and Agile Methods from the [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/en/). I have been working in the software industry since 2001.
 
 Since 2008, I have been with [Avaloq](https://www.avaloq.com) (since 2020 part of [NEC](https://www.nec.com)), a leading financial technology and service provider, in various roles such as software developer, project manager, team lead, business analyst and scrum master. I currently serve as product owner of our Client Lifecycle Management (CLM) solutions.
 
