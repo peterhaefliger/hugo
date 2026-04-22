@@ -1,5 +1,5 @@
 ---
 title: "Lithuanian"
-menu: "main"
+menu: "Learning"
 weight: 3
 ---
