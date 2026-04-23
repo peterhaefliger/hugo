@@ -1,7 +1,7 @@
 ---
 title: "Learning Lithuanian"
 menu: "main"
-weight: 1
+weight: 2
 ---
 
 I have been studying Lithuanian since mid-2025 and want to share some of my experiences here. 
