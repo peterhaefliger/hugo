@@ -4,7 +4,7 @@ menu: "main"
 weight: 1
 ---
 
-# Welcome! test
+# Welcome!
 
 Welcome to my personal blog on agile software development!
 
