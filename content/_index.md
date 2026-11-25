@@ -4,7 +4,7 @@ menu: "main"
 weight: 1
 ---
 
-# Welcome! bal
+# Welcome!
 
 Welcome to my personal blog on agile software development!
 
